@@ -1,28 +1,63 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+    <v-app class="grey--text text--darken-2">
+        <LoadingScreen :isLoading="isLoading" />
+        <AppTopNavigation />
+
+        <v-content v-if="!isLoading">
+            <v-container class="py-0 disp-flex flex-center-y flex-grow pa-10">
+                <router-view />
+            </v-container>
+        </v-content>
+
+        <LiveTicker v-if="$route.meta.ticker" />
+        <AppBottomNavigation />
+    </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Signup from './components/ACL/Signup';
+import Login from './components/ACL/Login';
+import LoadingScreen from './components/Common/Splash/LoadingScreen';
+import LiveTicker from './components/Common//Ticker/LiveTicker';
+import AppTopNavigation from './components/AppTopNavigation';
+import Exchange from './components/Exchange';
+import Overview from './components/Overview';
+import Marketcap from './components/Marketcap';
+import Trade from './components/Trade';
+import AppBottomNavigation from './components/AppBottomNavigation';
+import ApplyToList from './components/FrontEnd/ApplyToList';
+import Faq from './components/FrontEnd/Faq';
+import Front from './components/FrontEnd/Front';
 
 export default {
-  name: "app",
-  components: {
-    HelloWorld
-  }
+    name: 'App',
+    components: {
+        LoadingScreen,
+        LiveTicker,
+        AppTopNavigation,
+        Front,
+        ApplyToList,
+        Faq,
+        Exchange,
+        Overview,
+        Marketcap,
+        Trade,
+        AppBottomNavigation,
+        Login,
+        Signup
+    },
+    data() {
+        return { isLoading: true };
+    },
+    mounted() {
+        setTimeout(() => {
+            this.isLoading = false;
+        }, 3000);
+    }
 };
 </script>
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.v-input--selection-controls__input {
+    top: 10px;
 }
 </style>
