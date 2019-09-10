@@ -13,7 +13,6 @@
                             <v-tabs fixed-tabs>
                                 <v-tab class="text-left">BTC</v-tab>
                                 <v-tab>ETH</v-tab>
-                                <v-tab>USD</v-tab>
                                 <v-tab>USDT</v-tab>
                                 <v-tab-item>
                                     <v-flex md12>
@@ -296,8 +295,7 @@
                                             </v-card>
                                         </v-layout>
                                     </v-flex>
-                                </v-tab-item>
-                                <v-tab-item>
+                               
                                     <v-flex md12>
                                         <v-layout row>
                                             <v-card class="mx-auto pa-2" style=" width:95%;">

@@ -25,7 +25,6 @@
                                     <v-flex md3>
                                         <div>
                                             <img
-                                                data-v-cbd011fc
                                                 src="https://p2pb2b.io/storage/front_page_currencies/OLLHoeVEKpDiYQMVORw9Zwfi9fzu1u2yYIR5HYvu.png"
                                                 alt
                                                 role="presentation"
@@ -75,7 +74,7 @@
                         </v-carousel>
                     </v-flex>
                     <v-flex md4>
-                        <v-btn large color="primary">
+                        <v-btn large color="primary" to="/applytolist">
                             Add Your Coin
                             <v-icon dark right>mdi-checkbox-marked-circle</v-icon>
                         </v-btn>
@@ -83,51 +82,84 @@
                 </v-layout>
             </v-flex>
             <v-flex xs1 text-center>
-                <v-card dark color="secondary">
+                <v-card dark color="primary">
                     <v-card-text class="px-0">New</v-card-text>
-                    <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="70px"></v-img>
+                    <v-icon height="70px">mdi-tilde</v-icon>
                     <v-card-text class="px-0">Exe</v-card-text>
-                    <v-card-text class="px-0">Trade Now</v-card-text>
+                    <v-card-text class="px-0">
+                        <v-btn>Trade Now</v-btn>
+                    </v-card-text>
                 </v-card>
             </v-flex>
             <v-flex xs1 text-center>
-                <v-card dark color="secondary">
+                <v-card dark color="primary">
                     <v-card-text class="px-0">New</v-card-text>
-                    <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="70px"></v-img>
+                    <v-icon height="70px">mdi-anchor</v-icon>
                     <v-card-text class="px-0">Exe</v-card-text>
-                    <v-card-text class="px-0">Trade Now</v-card-text>
+                    <v-card-text class="px-0">
+                        <v-btn>Trade Now</v-btn>
+                    </v-card-text>
                 </v-card>
             </v-flex>
             <v-flex xs1 text-center>
-                <v-card dark color="secondary">
+                <v-card dark color="primary">
+                    <v-card-text class="px-0">New</v-card-text>
+                    <v-icon height="70px">mdi-tennis</v-icon>
+
+                    <v-card-text class="px-0">Exe</v-card-text>
+                    <v-card-text class="px-0">
+                        <v-btn>Trade Now</v-btn>
+                    </v-card-text>
+                </v-card>
+            </v-flex>
+            <v-flex xs1 text-center>
+                <v-card dark color="primary">
+                    <v-card-text class="px-0">New</v-card-text>
+                    <v-icon height="70px">mdi-anchor</v-icon>
+                    <v-card-text class="px-0">Exe</v-card-text>
+                    <v-card-text class="px-0">
+                        <v-btn>Trade Now</v-btn>
+                    </v-card-text>
+                </v-card>
+            </v-flex>
+            <v-flex xs1 text-center>
+                <v-card dark color="primary">
                     <v-card-text class="px-0 subheading">New</v-card-text>
-                    <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="70px"></v-img>
+                    <v-icon height="70px">mdi-anchor</v-icon>
                     <v-card-text class="px-0 subheading">Exe</v-card-text>
-                    <v-card-text class="px-0 subheading">Trade Now</v-card-text>
+                    <v-card-text class="px-0">
+                        <v-btn>Trade Now</v-btn>
+                    </v-card-text>
                 </v-card>
             </v-flex>
             <v-flex xs1 text-center>
-                <v-card dark color="secondary">
+                <v-card dark color="primary">
                     <v-card-text class="px-0">New</v-card-text>
-                    <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="70px"></v-img>
+                    <v-icon height="70px">mdi-mouse</v-icon>
                     <v-card-text class="px-0">Exe</v-card-text>
-                    <v-card-text class="px-0">Trade Now</v-card-text>
+                    <v-card-text class="px-0">
+                        <v-btn>Trade Now</v-btn>
+                    </v-card-text>
                 </v-card>
             </v-flex>
             <v-flex xs1 text-center>
-                <v-card dark color="secondary">
+                <v-card dark color="primary">
                     <v-card-text class="px-0">New</v-card-text>
-                    <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="70px"></v-img>
+                    <v-icon height="70px">mdi-xbox-controller</v-icon>
                     <v-card-text class="px-0">Exe</v-card-text>
-                    <v-card-text class="px-0">Trade Now</v-card-text>
+                    <v-card-text class="px-0">
+                        <v-btn>Trade Now</v-btn>
+                    </v-card-text>
                 </v-card>
             </v-flex>
             <v-flex xs1 text-center>
-                <v-card dark color="secondary">
+                <v-card dark color="primary">
                     <v-card-text class="px-0">New</v-card-text>
-                    <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="70px"></v-img>
+                    <v-icon height="70px">mdi-watch</v-icon>
                     <v-card-text class="px-0">Exe</v-card-text>
-                    <v-card-text class="px-0">Trade Now</v-card-text>
+                    <v-card-text class="px-0">
+                        <v-btn>Trade Now</v-btn>
+                    </v-card-text>
                 </v-card>
             </v-flex>
         </v-layout>

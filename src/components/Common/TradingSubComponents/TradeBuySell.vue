@@ -49,7 +49,10 @@
                         </v-layout>
                     </v-flex>
                     <v-flex md12>
-                        <v-btn class="mr-4" color="primary">Buy</v-btn>
+                        <v-btn class="mr-4" color="primary">
+                            Buy
+                            <v-icon>mdi-trending-up</v-icon>
+                        </v-btn>
                     </v-flex>
                 </form>
             </v-card>
@@ -103,7 +106,10 @@
                         </v-layout>
                     </v-flex>
                     <v-flex md12>
-                        <v-btn class="mr-4" color="error">Sell</v-btn>
+                        <v-btn class="mr-4" color="error">
+                            Sell
+                            <v-icon>mdi-trending-down</v-icon>
+                        </v-btn>
                     </v-flex>
                 </form>
             </v-card>

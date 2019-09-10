@@ -1,20 +1,37 @@
+/**
+ * float like a butterfly sting like a bee --Ali
+ **/
+
 import Vue from 'vue';
 import App from './App.vue';
-import vuetify from './plugins/vuetify';
+import Vuetify from 'vuetify/lib';
 import VueRouter from 'vue-router';
 import VueGlide from 'vue-glide-js';
-
-
-
+//import colors from 'vuetify/lib/util/colors';
 
 const routes = [
+
     {
-        path: '/',
+        path: '*',
+        component: App.components.SplashScreen,
+        meta: {
+            guest: true,
+            title: "Anima",
+            ticker: false,
+            topappbar: false,
+            bottombar: false
+
+        }
+    },
+    {
+        path: '/home',
         component: App.components.Front,
         meta: {
             guest: true,
             title: "Home",
-            ticker: true
+            ticker: true,
+            topappbar: true,
+            bottombar: true
 
         }
     },
@@ -24,7 +41,9 @@ const routes = [
         meta: {
             guest: true,
             title: "login",
-            ticker: false
+            ticker: false,
+            topappbar: true,
+            bottombar: true
         }
     },
     {
@@ -33,7 +52,9 @@ const routes = [
         meta: {
             guest: true,
             title: "Signup",
-            ticker: false
+            ticker: false,
+            topappbar: true,
+            bottombar: true
 
         }
     },
@@ -44,7 +65,9 @@ const routes = [
             guest: false,
             requiresAuth: true,
             title: "Exchange",
-            ticker: false
+            ticker: false,
+            topappbar: true,
+            bottombar: true
         }
     },
     {
@@ -54,7 +77,9 @@ const routes = [
             guest: false,
             requiresAuth: false,
             title: "Overview",
-            ticker: false
+            ticker: false,
+            topappbar: true,
+            bottombar: true
         }
 
     },
@@ -65,22 +90,29 @@ const routes = [
             guest: false,
             requiresAuth: true,
             title: "Marketcap",
-            ticker: false
+            ticker: false,
+            topappbar: true,
+            bottombar: true
         }
     },
     {
         path: '/trade', component: App.components.Trade,
         meta: {
             guest: true,
-            title: "Trade"
+            title: "Trade",
+            ticker: false,
+            topappbar: true,
+            bottombar: true
         }
     },
     {
         path: '/applytolist', component: App.components.ApplyToList,
         meta: {
             guest: true,
-            title: "applytolist",
-            ticker: false
+            title: "Apply To List",
+            ticker: false,
+            topappbar: true,
+            bottombar: true
         }
     },
     {
@@ -88,7 +120,9 @@ const routes = [
         meta: {
             guest: true,
             title: "Faq",
-            ticker: false
+            ticker: false,
+            topappbar: true,
+            bottombar: true
         }
     }
 
@@ -105,9 +139,11 @@ Vue.use(VueGlide);
 
 
 Vue.config.productionTip = false;
+const vuetifyOptions = {}
+Vue.use(Vuetify);
 
 new Vue({
-    vuetify,
+    vuetify: new Vuetify(vuetifyOptions),
     router: router,
-    render: h => h(App)
+    render: h => h(App),
 }).$mount('#app');
