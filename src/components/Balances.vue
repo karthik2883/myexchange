@@ -23,10 +23,10 @@
                         :sort-desc.sync="descending"
                         class="elevation-1"
                     ></v-data-table>
-                    <div class="text-center pt-2">
+                    <!-- <div class="text-center pt-2">
                         <v-btn color="primary" class="mr-2" @click="toggleOrder">Toggle sort order</v-btn>
                         <v-btn color="primary" @click="nextSort">Sort next column</v-btn>
-                    </div>
+                    </div>-->
                 </div>
             </v-flex>
         </v-layout>
@@ -41,109 +41,109 @@ export default {
             descending: false,
             headers: [
                 {
-                    text: 'Dessert (100g serving)',
+                    text: 'Coins',
                     align: 'left',
                     value: 'name'
                 },
-                { text: 'Calories', value: 'calories' },
-                { text: 'Fat (g)', value: 'fat' },
-                { text: 'Carbs (g)', value: 'carbs' },
-                { text: 'Protein (g)', value: 'protein' },
-                { text: 'Iron (%)', value: 'iron' }
+                { text: 'Action', value: 'action' },
+                { text: 'Explorer', value: 'explorer' },
+                { text: 'Main Account', value: 'mainaccount' },
+                { text: 'Trading Account', value: 'tradingaccount' },
+                { text: 'In Order', value: 'inorder' }
             ],
             desserts: [
                 {
-                    name: 'Frozen Yogurt',
-                    calories: 159,
-                    fat: 6.0,
-                    carbs: 24,
-                    protein: 4.0,
-                    iron: '1%'
+                    name: 'BTC',
+                    action: 'deposite/withdraw',
+                    explorer: 'link to explorer',
+                    mainaccount: 24,
+                    tradingaccount: 4.0,
+                    inorder: 1
                 },
                 {
-                    name: 'Ice cream sandwich',
-                    calories: 237,
-                    fat: 9.0,
-                    carbs: 37,
-                    protein: 4.3,
-                    iron: '1%'
+                    name: 'USD',
+                    action: 'deposite/withdraw',
+                    explorer: 'link to explorer',
+                    mainaccount: 24,
+                    tradingaccount: 4.0,
+                    inorder: 1
                 },
                 {
-                    name: 'Eclair',
-                    calories: 262,
-                    fat: 16.0,
-                    carbs: 23,
-                    protein: 6.0,
-                    iron: '7%'
+                    name: 'ETH',
+                    action: 'deposite/withdraw',
+                    explorer: 'link to explorer',
+                    mainaccount: 24,
+                    tradingaccount: 4.0,
+                    inorder: 1
                 },
                 {
-                    name: 'Cupcake',
-                    calories: 305,
-                    fat: 3.7,
-                    carbs: 67,
-                    protein: 4.3,
-                    iron: '8%'
+                    name: 'ECH',
+                    action: 'deposite/withdraw',
+                    explorer: 'link to explorer',
+                    mainaccount: 24,
+                    tradingaccount: 4.0,
+                    inorder: 1
                 },
                 {
-                    name: 'Gingerbread',
-                    calories: 356,
-                    fat: 16.0,
-                    carbs: 49,
-                    protein: 3.9,
-                    iron: '16%'
+                    name: 'LTC',
+                    action: 'deposite/withdraw',
+                    explorer: 'link to explorer',
+                    mainaccount: 24,
+                    tradingaccount: 4.0,
+                    inorder: 1
                 },
                 {
-                    name: 'Jelly bean',
-                    calories: 375,
-                    fat: 0.0,
-                    carbs: 94,
-                    protein: 0.0,
-                    iron: '0%'
+                    name: 'USDT',
+                    action: 'deposite/withdraw',
+                    explorer: 'link to explorer',
+                    mainaccount: 24,
+                    tradingaccount: 4.0,
+                    inorder: 1
                 },
                 {
-                    name: 'Lollipop',
-                    calories: 392,
-                    fat: 0.2,
-                    carbs: 98,
-                    protein: 0,
-                    iron: '2%'
+                    name: 'EOS',
+                    action: 'deposite/withdraw',
+                    explorer: 'link to explorer',
+                    mainaccount: 24,
+                    tradingaccount: 4.0,
+                    inorder: 1
                 },
                 {
-                    name: 'Honeycomb',
-                    calories: 408,
-                    fat: 3.2,
-                    carbs: 87,
-                    protein: 6.5,
-                    iron: '45%'
+                    name: 'EST',
+                    action: 'deposite/withdraw',
+                    explorer: 'link to explorer',
+                    mainaccount: 24,
+                    tradingaccount: 4.0,
+                    inorder: 1
                 },
                 {
-                    name: 'Donut',
-                    calories: 452,
-                    fat: 25.0,
-                    carbs: 51,
-                    protein: 4.9,
-                    iron: '22%'
+                    name: 'LTC',
+                    action: 'deposite/withdraw',
+                    explorer: 'link to explorer',
+                    mainaccount: 24,
+                    tradingaccount: 4.0,
+                    inorder: 1
                 },
                 {
-                    name: 'KitKat',
-                    calories: 518,
-                    fat: 26.0,
-                    carbs: 65,
-                    protein: 7,
-                    iron: '6%'
+                    name: 'BCH',
+                    action: 'deposite/withdraw',
+                    explorer: 'link to explorer',
+                    mainaccount: 24,
+                    tradingaccount: 4.0,
+                    inorder: 1
                 }
             ]
         };
-    },
-    methods: {
-        toggleOrder() {
-            this.descending = !this.descending;
-        },
-        nextSort() {
-            let index = this.headers.findIndex(h => h.value === this.sortBy);
-            index = (index + 1) % this.headers.length;
-            this.sortBy = this.headers[index].value;
-        }
     }
+    // methods: {
+    //     toggleOrder() {
+    //         this.descending = !this.descending;
+    //     },
+    //     nextSort() {
+    //         let index = this.headers.findIndex(h => h.value === this.sortBy);
+    //         index = (index + 1) % this.headers.length;
+    //         this.sortBy = this.headers[index].value;
+    //     }
+    // }
 };
 </script>
