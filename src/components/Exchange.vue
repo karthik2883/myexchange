@@ -40,7 +40,7 @@
                         </v-container>
                     </v-flex>
                     <v-flex md4>
-                        <v-select label="USD"></v-select>
+                        <v-select label="USDT"></v-select>
                         <v-text-field></v-text-field>
                     </v-flex>
                 </v-layout>

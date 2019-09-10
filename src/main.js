@@ -71,6 +71,18 @@ const routes = [
         }
     },
     {
+        path: '/balances',
+        component: App.components.Balances,
+        meta: {
+            guest: false,
+            requiresAuth: true,
+            title: "Balances",
+            ticker: false,
+            topappbar: true,
+            bottombar: true
+        }
+    },
+    {
         path: '/overview',
         component: App.components.Overview,
         meta: {

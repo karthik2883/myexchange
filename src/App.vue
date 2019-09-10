@@ -18,6 +18,7 @@ import SplashScreen from './components/Common/Splash/SplashScreen';
 import LiveTicker from './components/Common//Ticker/LiveTicker';
 import AppTopNavigation from './components/AppTopNavigation';
 import Exchange from './components/Exchange';
+import Balances from './components/Balances';
 import Overview from './components/Overview';
 import Marketcap from './components/Marketcap';
 import Trade from './components/Trade';
@@ -37,6 +38,7 @@ export default {
         ApplyToList,
         Faq,
         Exchange,
+        Balances,
         Overview,
         Marketcap,
         Trade,
