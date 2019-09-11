@@ -1,11 +1,12 @@
 <template>
-    <v-layout row class="pa-2">
-        <v-flex md12>
-            <v-card>
-                <v-layout row wrap align-center>
-                    <v-flex>
-                        <VueTradingView
-                            :options="{
+    <v-container fluid>
+        <v-layout row class="pa-2">
+            <v-flex md12>
+                <v-card>
+                    <v-layout row wrap align-center>
+                        <v-flex>
+                            <VueTradingView
+                                :options="{
                         'width': 920,
                         'height': 610,
                         'symbol': 'BITSTAMP:BTCUSD',
@@ -18,12 +19,13 @@
                         'enable_publishing': false,
                         'allow_symbol_change': true
                         }"
-                        />
-                    </v-flex>
-                </v-layout>
-            </v-card>
-        </v-flex>
-    </v-layout>
+                            />
+                        </v-flex>
+                    </v-layout>
+                </v-card>
+            </v-flex>
+        </v-layout>
+    </v-container>
 </template>
 <script>
 import VueTradingView from 'vue-trading-view';

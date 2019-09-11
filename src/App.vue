@@ -17,14 +17,16 @@ import Signup from './components/Acl/Signup';
 import Login from './components/Acl/Login';
 import SplashScreen from './components/Common/Splash/SplashScreen';
 import LiveTicker from './components/Common//Ticker/LiveTicker';
-import AppTopNavigation from './components/AppTopNavigation';
-import Exchange from './components/Exchange';
-import Balances from './components/Balances';
+import AppTopNavigation from './components/Common/Navigation/AppTopNavigation';
+import Exchange from './components/Backend/Exchange';
+import Balances from './components/Backend/Balances';
+import History from './components/Backend/History';
+import Order from './components/Backend/Order';
 import Overview from './components/Overview';
 import Marketcap from './components/Marketcap';
-import Trade from './components/Trade';
-import AppBottomNavigation from './components/AppBottomNavigation';
-import AppFooter from './components/AppFooter';
+import Trade from './components/Trade/Trade';
+import AppBottomNavigation from './components/Common/Navigation/AppBottomNavigation';
+import AppFooter from './components/Common/Navigation/AppFooter';
 import ApplyToList from './components/FrontEnd/ApplyToList';
 import Faq from './components/FrontEnd/Faq';
 import Front from './components/FrontEnd/Front';
@@ -47,7 +49,9 @@ export default {
         AppBottomNavigation,
         AppFooter,
         Login,
-        Signup
+        Signup,
+        History,
+        Order
     },
     data() {
         return {};

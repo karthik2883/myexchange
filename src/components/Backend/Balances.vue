@@ -11,9 +11,7 @@
             <v-flex md6 text-left>
                 <v-text-field label="Search" single-line></v-text-field>
             </v-flex>
-            <v-flex md12>
-                <v-divider class="mx-4" :inset="inset"></v-divider>
-            </v-flex>
+
             <v-flex md12 text-left>
                 <div>
                     <v-data-table

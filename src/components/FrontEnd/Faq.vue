@@ -1,7 +1,7 @@
 <template>
-    <v-container fill-height grid-list-md text-xs-center class="pa-15">
-        <v-row justify="center" no-gutters>
-            <p class="display-1 pa-5">Authorization</p>
+    <v-container fill-height grid-list-md text-xs-left class="pa-15">
+        <v-row no-gutters>
+            <p class="headline pa-5 text-start">Authorization</p>
 
             <v-expansion-panels popout>
                 <v-expansion-panel>
@@ -30,7 +30,7 @@
                 </v-expansion-panel>
             </v-expansion-panels>
 
-            <p class="display-1 pa-5">Secure your funds</p>
+            <p class="headline pa-5">Secure your funds</p>
 
             <v-expansion-panels popout>
                 <v-expansion-panel>
@@ -55,7 +55,7 @@
                 </v-expansion-panel>
             </v-expansion-panels>
 
-            <p class="display-1 pa-5">Deposit / Withdrawal</p>
+            <p class="headline pa-5">Deposit / Withdrawal</p>
 
             <v-expansion-panels popout>
                 <v-expansion-panel>
@@ -76,7 +76,7 @@
                 </v-expansion-panel>
             </v-expansion-panels>
 
-            <p class="display-1 pa-5">Currency operations</p>
+            <p class="headline pa-5">Currency operations</p>
 
             <v-expansion-panels popout>
                 <v-expansion-panel>
@@ -129,7 +129,7 @@
                 </v-expansion-panel>
             </v-expansion-panels>
 
-            <p class="display-1 pa-5">Referral program</p>
+            <p class="headline pa-5">Referral program</p>
 
             <v-expansion-panels popout>
                 <v-expansion-panel>
@@ -142,7 +142,7 @@
                 </v-expansion-panel>
             </v-expansion-panels>
 
-            <p class="display-1 pa-5">General Questions</p>
+            <p class="headline pa-5">General Questions</p>
 
             <v-expansion-panels popout>
                 <v-expansion-panel>

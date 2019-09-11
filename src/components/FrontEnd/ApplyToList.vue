@@ -1,12 +1,14 @@
 <template>
-    <v-container fill-height grid-list-md text-xs-center class="pa-15">
-        <v-row justify="center" md12>
-            <v-flex md6 class="pa-10">
-                <ul>
-                    <li style="list-style-type:none;">
+    <v-container grid-list-md>
+        <v-layout row class="pa-5">
+            <v-flex md12 text-left>
+                <v-layout row>
+                    <v-flex md8 text-left>
                         <p class="headline">Leave a request</p>
-                    </li>
-                </ul>
+                    </v-flex>
+                </v-layout>
+            </v-flex>
+            <v-flex md12 text-left>
                 <ol>
                     <li>
                         <ul>
@@ -82,7 +84,7 @@
                     </v-flex>
                 </form>
             </v-flex>
-        </v-row>
+        </v-layout>
     </v-container>
 </template>
 <script>

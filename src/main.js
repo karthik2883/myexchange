@@ -83,6 +83,30 @@ const routes = [
         }
     },
     {
+        path: '/history',
+        component: App.components.History,
+        meta: {
+            guest: false,
+            requiresAuth: true,
+            title: "History",
+            ticker: false,
+            topappbar: true,
+            bottombar: true
+        }
+    },
+    {
+        path: '/Order',
+        component: App.components.Order,
+        meta: {
+            guest: false,
+            requiresAuth: true,
+            title: "Order",
+            ticker: false,
+            topappbar: true,
+            bottombar: true
+        }
+    },
+    {
         path: '/overview',
         component: App.components.Overview,
         meta: {

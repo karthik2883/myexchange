@@ -56,5 +56,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../Style/splashscreen.scss';
+@import './Style/splashscreen.scss';
 </style>

@@ -2,6 +2,7 @@
     <v-layout>
         <v-layout row>
             <v-flex md6 class="pa-2">
+                <TradeInfo />
                 <TradeViewChart />
                 <TradeBuySell />
                 <TradeBuySellOrder />
@@ -31,17 +32,20 @@
 </template>
 
 <script>
+import TradeInfo from './TradeInfo';
 import TradeHistory from './TradeHistory';
 import TradeMarketBalance from './TradeMarketBalance';
 import TradeViewChart from './TradeViewChart';
 import TradeBuySell from './TradeBuySell';
 import TradeBuySellOrder from './TradeBuySellOrder';
+
 export default {
     name: 'TradingGrid',
     data() {
         return {};
     },
     components: {
+        TradeInfo,
         TradeHistory,
         TradeMarketBalance,
         TradeViewChart,

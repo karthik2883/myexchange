@@ -2,6 +2,7 @@
   position: relative;
   height: 100%;
   width: 100%;
+   
   .logo-wrapper {
     height: 30vh;
     width: 30vw;
@@ -10,10 +11,11 @@
     top: 50%;
     margin-left: -15vw;
     margin-top: -15vh;
-    animation: image 2s ease-in-out 6s 1 normal forwards;     
+    animation: image 2s ease-in-out 3s 1 normal forwards;     
     background-repeat: no-repeat;
     box-sizing: border-box;
     background-size: 100% 100%; 
+     
   }
     .logo-letters-group {
       height: 15vh;
@@ -43,11 +45,11 @@
     }
       @-webkit-keyframes fromBlackToGreen {
         0%   {
-          color: #00b894;
+          color: #333;
         }
         100% {
          // opacity: 0;
-          color: #00b894;
+          color: #0d2f6a;
         }
     }
       @keyframes fromBlackToGreen {
@@ -55,7 +57,7 @@
           color: #333;
         }
         100% {
-          color: #00b894;
+          color: #0d2f6a;
         }
       }
 

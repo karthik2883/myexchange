@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import TradingGrid from './Common/TradingSubComponents/TradingGrid';
+import TradingGrid from '../Trade/TradingSubComponents/TradingGrid';
 
 export default {
     name: 'Trading',
