@@ -8,6 +8,7 @@
         </v-content>
         <LiveTicker v-if="$route.meta.ticker" />
         <AppBottomNavigation v-if="$route.meta.bottombar" />
+        <AppFooter />
     </v-app>
 </template>
 
@@ -23,6 +24,7 @@ import Overview from './components/Overview';
 import Marketcap from './components/Marketcap';
 import Trade from './components/Trade';
 import AppBottomNavigation from './components/AppBottomNavigation';
+import AppFooter from './components/AppFooter';
 import ApplyToList from './components/FrontEnd/ApplyToList';
 import Faq from './components/FrontEnd/Faq';
 import Front from './components/FrontEnd/Front';
@@ -43,6 +45,7 @@ export default {
         Marketcap,
         Trade,
         AppBottomNavigation,
+        AppFooter,
         Login,
         Signup
     },
