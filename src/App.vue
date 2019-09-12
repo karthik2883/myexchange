@@ -1,5 +1,5 @@
 <template>
-    <v-app>
+    <v-app class="secondary">
         <AppTopNavigation v-if="$route.meta.topappbar" />
         <v-content>
             <v-container class="py-0 disp-flex flex-center-y flex-grow pa-10">

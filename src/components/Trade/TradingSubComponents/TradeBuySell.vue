@@ -1,14 +1,14 @@
  <template>
     <v-layout row class="pa-2">
         <v-flex md6 class="pa-2">
-            <v-card class="pa-2">
-                <v-flex>Buy NEO</v-flex>
+            <v-card class="pa-2" :elevation="24">
+                <v-flex class="body-1">Buy NEO</v-flex>
                 <form>
                     <v-flex md12>
                         <v-layout row wrap align-center>
-                            <v-flex md4 class="pa-2">
+                            <v-flex md4 class="pa-4">
                                 <v-spacer></v-spacer>
-                                <v-label>Price</v-label>
+                                <v-label class="body-1">Price</v-label>
                             </v-flex>
                             <v-flex md8>
                                 <v-text-field value="0.15"></v-text-field>
@@ -17,9 +17,9 @@
                     </v-flex>
                     <v-flex md12>
                         <v-layout row wrap align-center>
-                            <v-flex md4 class="pa-2">
+                            <v-flex md4 class="pa-4">
                                 <v-spacer></v-spacer>
-                                <v-label>Amount</v-label>
+                                <v-label class="body-1">Amount</v-label>
                             </v-flex>
                             <v-flex md8>
                                 <v-text-field value="0.15"></v-text-field>
@@ -28,9 +28,9 @@
                     </v-flex>
                     <v-flex md12>
                         <v-layout row wrap align-center>
-                            <v-flex md4 class="pa-2">
+                            <v-flex md4 class="pa-4">
                                 <v-spacer></v-spacer>
-                                <v-label>Total</v-label>
+                                <v-label class="body-1">Total</v-label>
                             </v-flex>
                             <v-flex md8>
                                 <v-text-field value="0.15"></v-text-field>
@@ -59,13 +59,13 @@
         </v-flex>
         <v-flex md6 class="pa-2">
             <v-card class="pa-2">
-                <v-flex>Sell NEO</v-flex>
+                <v-flex class="body-1">Sell NEO</v-flex>
                 <form>
                     <v-flex md12>
                         <v-layout row wrap align-center>
-                            <v-flex md4 class="pa-2">
+                            <v-flex md4 class="pa-4">
                                 <v-spacer></v-spacer>
-                                <v-label>Price</v-label>
+                                <v-label class="body-1">Price</v-label>
                             </v-flex>
                             <v-flex md8>
                                 <v-text-field value="0.15"></v-text-field>
@@ -74,9 +74,9 @@
                     </v-flex>
                     <v-flex md12>
                         <v-layout row wrap align-center>
-                            <v-flex md4 class="pa-2">
+                            <v-flex md4 class="pa-4">
                                 <v-spacer></v-spacer>
-                                <v-label>Amount</v-label>
+                                <v-label class="body-1">Amount</v-label>
                             </v-flex>
                             <v-flex md8>
                                 <v-text-field value="0.15"></v-text-field>
@@ -85,9 +85,9 @@
                     </v-flex>
                     <v-flex md12>
                         <v-layout row wrap align-center>
-                            <v-flex md4 class="pa-2">
+                            <v-flex md4 class="pa-4">
                                 <v-spacer></v-spacer>
-                                <v-label>Total</v-label>
+                                <v-label class="body-1">Total</v-label>
                             </v-flex>
                             <v-flex md8>
                                 <v-text-field value="0.15"></v-text-field>
@@ -96,9 +96,9 @@
                     </v-flex>
                     <v-flex md12>
                         <v-layout row wrap align-center>
-                            <v-flex md4 class="pa-2">
+                            <v-flex md4 class="pa-4">
                                 <v-spacer></v-spacer>
-                                <v-label>Total + fee 0.2%</v-label>
+                                <v-label class="body-1">Total + fee 0.2%</v-label>
                             </v-flex>
                             <v-flex md8>
                                 <v-text-field value="0.15"></v-text-field>

@@ -6,7 +6,7 @@
             </v-flex>
             <v-layout md12 row class="pa-15">
                 <v-flex md4 text-center>
-                    <v-card dark color="secondary">
+                    <v-card dark color="secondary" :elevation="24">
                         <v-card-text class="px-0">Register / Login</v-card-text>
                         <svg
                             data-v-0d0355ce
@@ -27,7 +27,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex md4 text-center>
-                    <v-card dark color="secondary">
+                    <v-card dark color="secondary" :elevation="24">
                         <v-card-text class="px-0">Withdraw Funds</v-card-text>
                         <svg
                             data-v-0d0355ce
@@ -48,7 +48,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex md4 text-center>
-                    <v-card dark color="secondary">
+                    <v-card dark color="secondary" :elevation="24">
                         <v-card-text class="px-0">Codes</v-card-text>
                         <svg
                             data-v-0d0355ce
@@ -70,7 +70,7 @@
                 </v-flex>
 
                 <v-flex md4 text-center>
-                    <v-card dark color="secondary">
+                    <v-card dark color="secondary" :elevation="24">
                         <v-card-text class="px-0">Exchange</v-card-text>
                         <svg
                             data-v-0d0355ce
@@ -91,7 +91,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex md4 text-center>
-                    <v-card dark color="secondary">
+                    <v-card dark color="secondary" :elevation="24">
                         <v-card-text class="px-0">Deposite Coin</v-card-text>
                         <svg
                             data-v-0d0355ce
@@ -112,7 +112,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex md4 text-center>
-                    <v-card dark color="secondary">
+                    <v-card dark color="secondary" :elevation="24">
                         <v-card-text class="px-0">Trade</v-card-text>
                         <svg
                             data-v-0d0355ce

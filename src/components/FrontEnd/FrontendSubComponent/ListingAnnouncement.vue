@@ -19,6 +19,7 @@
                             hide-delimiter-background
                             delimiter-icon="mdi-minus"
                             height="100"
+                            :elevation="24"
                         >
                             <v-carousel-item :key="i" v-for="i in 6">
                                 <v-layout row>

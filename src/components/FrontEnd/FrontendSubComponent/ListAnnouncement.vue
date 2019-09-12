@@ -7,6 +7,7 @@
                 max-width="100"
                 v-for="coin in coins"
                 :key="coin.keys"
+                :elevation="24"
             >
                 <v-flex>
                     <img

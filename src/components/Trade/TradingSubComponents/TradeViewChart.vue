@@ -1,14 +1,14 @@
 <template>
     <v-container fluid>
-        <v-layout row class="pa-2">
+        <v-layout row>
             <v-flex md12>
-                <v-card>
+                <v-card :elevation="24">
                     <v-layout row wrap align-center>
                         <v-flex>
                             <VueTradingView
                                 :options="{
                         'width': 920,
-                        'height': 610,
+                        'height': 400,
                         'symbol': 'BITSTAMP:BTCUSD',
                         'interval': 'D',
                         'timezone': 'Etc/UTC',
