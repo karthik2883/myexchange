@@ -3,7 +3,9 @@
         <AppTopNavigation v-if="$route.meta.topappbar" />
         <v-content>
             <v-container class="py-0 disp-flex flex-center-y flex-grow pa-10">
-                <router-view />
+                <transition name="fade" mode="out-in">
+                    <router-view />
+                </transition>
             </v-container>
         </v-content>
         <LiveTicker v-if="$route.meta.ticker" />
@@ -61,5 +63,16 @@ export default {
 <style scoped>
 .v-input--selection-controls__input {
     top: 10px;
+}
+.fade-enter-active,
+.fade-leave-active {
+    transition-duration: 0.3s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+    opacity: 0;
 }
 </style>

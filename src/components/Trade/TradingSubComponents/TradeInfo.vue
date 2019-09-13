@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <v-container class="pa-0">
         <v-card :elevation="24">
             <v-container fluid>
                 <v-layout row md12>

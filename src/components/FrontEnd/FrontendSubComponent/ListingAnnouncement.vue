@@ -19,7 +19,6 @@
                             hide-delimiter-background
                             delimiter-icon="mdi-minus"
                             height="100"
-                            :elevation="24"
                         >
                             <v-carousel-item :key="i" v-for="i in 6">
                                 <v-layout row>
@@ -75,7 +74,7 @@
                         </v-carousel>
                     </v-flex>
                     <v-flex md4>
-                        <v-btn large color="primary" to="/applytolist">
+                        <v-btn :elevation="24" large color="primary" to="/applytolist">
                             Add Your Coin
                             <v-icon dark right>mdi-checkbox-marked-circle</v-icon>
                         </v-btn>
@@ -83,7 +82,7 @@
                 </v-layout>
             </v-flex>
             <v-flex xs1 text-center>
-                <v-card dark color="primary">
+                <v-card dark color="primary" :elevation="24">
                     <v-card-text class="px-0">New</v-card-text>
                     <v-icon height="70px">mdi-tilde</v-icon>
                     <v-card-text class="px-0">Exe</v-card-text>
@@ -93,7 +92,7 @@
                 </v-card>
             </v-flex>
             <v-flex xs1 text-center>
-                <v-card dark color="primary">
+                <v-card dark color="primary" :elevation="24">
                     <v-card-text class="px-0">New</v-card-text>
                     <v-icon height="70px">mdi-anchor</v-icon>
                     <v-card-text class="px-0">Exe</v-card-text>
@@ -103,7 +102,7 @@
                 </v-card>
             </v-flex>
             <v-flex xs1 text-center>
-                <v-card dark color="primary">
+                <v-card dark color="primary" :elevation="24">
                     <v-card-text class="px-0">New</v-card-text>
                     <v-icon height="70px">mdi-tennis</v-icon>
 
@@ -114,7 +113,7 @@
                 </v-card>
             </v-flex>
             <v-flex xs1 text-center>
-                <v-card dark color="primary">
+                <v-card dark color="primary" :elevation="24">
                     <v-card-text class="px-0">New</v-card-text>
                     <v-icon height="70px">mdi-anchor</v-icon>
                     <v-card-text class="px-0">Exe</v-card-text>
@@ -124,7 +123,7 @@
                 </v-card>
             </v-flex>
             <v-flex xs1 text-center>
-                <v-card dark color="primary">
+                <v-card dark color="primary" :elevation="24">
                     <v-card-text class="px-0 subheading">New</v-card-text>
                     <v-icon height="70px">mdi-anchor</v-icon>
                     <v-card-text class="px-0 subheading">Exe</v-card-text>
@@ -134,7 +133,7 @@
                 </v-card>
             </v-flex>
             <v-flex xs1 text-center>
-                <v-card dark color="primary">
+                <v-card dark color="primary" :elevation="24">
                     <v-card-text class="px-0">New</v-card-text>
                     <v-icon height="70px">mdi-mouse</v-icon>
                     <v-card-text class="px-0">Exe</v-card-text>
@@ -144,7 +143,7 @@
                 </v-card>
             </v-flex>
             <v-flex xs1 text-center>
-                <v-card dark color="primary">
+                <v-card dark color="primary" :elevation="24">
                     <v-card-text class="px-0">New</v-card-text>
                     <v-icon height="70px">mdi-xbox-controller</v-icon>
                     <v-card-text class="px-0">Exe</v-card-text>
@@ -154,7 +153,7 @@
                 </v-card>
             </v-flex>
             <v-flex xs1 text-center>
-                <v-card dark color="primary">
+                <v-card dark color="primary" :elevation="24">
                     <v-card-text class="px-0">New</v-card-text>
                     <v-icon height="70px">mdi-watch</v-icon>
                     <v-card-text class="px-0">Exe</v-card-text>
