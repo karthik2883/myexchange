@@ -48,91 +48,36 @@
         },
         {
             "name": "LTC",
-            "prec_save": 20,
+            "prec_save": 12,
             "prec_show": 8
         },
         {
             "name": "ETH",
-            "prec_save": 20,
+            "prec_save": 12,
             "prec_show": 8
         },
         {
             "name": "ETC",
-            "prec_save": 20,
+            "prec_save": 12,
             "prec_show": 8
         },
         {
             "name": "EOS",
-            "prec_save": 20,
-            "prec_show": 4
+            "prec_save": 12,
+            "prec_show": 8
         },
         {
-            "name": "USDT",
-            "prec_save": 20,
+            "name": "XMR",
+            "prec_save": 12,
+            "prec_show": 8
+        },
+        {
+            "name": "DSH",
+            "prec_save": 12,
             "prec_show": 8
         }
     ],
     "markets": [
-        {
-            "name": "BCHBTC",
-            "stock": {
-                "name": "BCH",
-                "prec": 8
-            },
-            "money": {
-                "name": "BTC",
-                "prec": 8
-            },
-            "min_amount": "0.001"
-        },
-        {
-            "name": "LTCBTC",
-            "stock": {
-                "name": "LTC",
-                "prec": 8
-            },
-            "money": {
-                "name": "BTC",
-                "prec": 8
-            },
-            "min_amount": "0.001"
-        },
-        {
-            "name": "ETHBTC",
-            "stock": {
-                "name": "ETH",
-                "prec": 8
-            },
-            "money": {
-                "name": "BTC",
-                "prec": 8
-            },
-            "min_amount": "0.001"
-        },
-        {
-            "name": "ETCBTC",
-            "stock": {
-                "name": "ETC",
-                "prec": 8
-            },
-            "money": {
-                "name": "BTC",
-                "prec": 8
-            },
-            "min_amount": "0.001"
-        },
-        {
-            "name": "EOSBTC",
-            "stock": {
-                "name": "EOS",
-                "prec": 8
-            },
-            "money": {
-                "name": "BTC",
-                "prec": 8
-            },
-            "min_amount": "0.001"
-        },
         {
             "name": "BTCBCH",
             "stock": {
@@ -194,121 +139,109 @@
             "min_amount": "0.001"
         },
         {
-            "name": "BTCETH",
+            "name": "XMRBCH",
             "stock": {
-                "name": "BTC",
+                "name": "XMR",
                 "prec": 8
             },
             "money": {
-                "name": "ETH",
+                "name": "BCH",
                 "prec": 8
             },
             "min_amount": "0.001"
         },
         {
-            "name": "LTCETH",
+            "name": "DSHBCH",
             "stock": {
-                "name": "LTC",
+                "name": "DSH",
                 "prec": 8
             },
             "money": {
-                "name": "ETH",
+                "name": "BCH",
                 "prec": 8
             },
             "min_amount": "0.001"
         },
         {
-            "name": "BCHETH",
+            "name": "BCHBTC",
             "stock": {
                 "name": "BCH",
                 "prec": 8
             },
             "money": {
-                "name": "ETH",
-                "prec": 8
-            },
-            "min_amount": "0.001"
-        },
-        {
-            "name": "ETCETH",
-            "stock": {
-                "name": "ETC",
-                "prec": 8
-            },
-            "money": {
-                "name": "ETH",
-                "prec": 8
-            },
-            "min_amount": "0.001"
-        },
-        {
-            "name": "EOSETH",
-            "stock": {
-                "name": "EOS",
-                "prec": 8
-            },
-            "money": {
-                "name": "ETH",
-                "prec": 8
-            },
-            "min_amount": "0.001"
-        },
-        {
-            "name": "BTCUSDT",
-            "stock": {
                 "name": "BTC",
                 "prec": 8
             },
-            "money": {
-                "name": "USDT",
-                "prec": 8
-            },
             "min_amount": "0.001"
         },
         {
-            "name": "LTCUSDT",
+            "name": "LTCBTC",
             "stock": {
                 "name": "LTC",
                 "prec": 8
             },
             "money": {
-                "name": "USDT",
+                "name": "BTC",
                 "prec": 8
             },
             "min_amount": "0.001"
         },
         {
-            "name": "ETHUSDT",
+            "name": "ETHBTC",
             "stock": {
                 "name": "ETH",
                 "prec": 8
             },
             "money": {
-                "name": "USDT",
+                "name": "BTC",
                 "prec": 8
             },
             "min_amount": "0.001"
         },
         {
-            "name": "ETCUSDT",
+            "name": "ETCBTC",
             "stock": {
                 "name": "ETC",
                 "prec": 8
             },
             "money": {
-                "name": "USDT",
+                "name": "BTC",
                 "prec": 8
             },
             "min_amount": "0.001"
         },
         {
-            "name": "EOSUSDT",
+            "name": "EOSBTC",
             "stock": {
                 "name": "EOS",
                 "prec": 8
             },
             "money": {
-                "name": "USDT",
+                "name": "BTC",
+                "prec": 8
+            },
+            "min_amount": "0.001"
+        },
+        {
+            "name": "XMRBTC",
+            "stock": {
+                "name": "XMR",
+                "prec": 8
+            },
+            "money": {
+                "name": "BTC",
+                "prec": 8
+            },
+            "min_amount": "0.001"
+        },
+        {
+            "name": "DSHBTC",
+            "stock": {
+                "name": "DSH",
+                "prec": 8
+            },
+            "money": {
+                "name": "BTC",
                 "prec": 8
             },
             "min_amount": "0.001"
