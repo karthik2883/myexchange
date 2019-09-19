@@ -7,10 +7,14 @@ import App from './App.vue';
 import Vuetify from 'vuetify/lib';
 import VueRouter from 'vue-router';
 import VueGlide from 'vue-glide-js';
+import Vuex from 'vuex';
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+
 //import colors from 'vuetify/lib/util/colors';
-
+import VueNativeSock from 'vue-native-websocket'
 const routes = [
-
     {
         path: '*',
         component: App.components.SplashScreen,
@@ -165,14 +169,56 @@ const routes = [
 ];
 
 const router = new VueRouter({ routes, mode: 'history' });
+
 router.beforeEach((to, from, next) => {
     document.title = `EvrEx - ${to.meta.title}`
 
     next()
-})
+});
+
+
 Vue.use(VueRouter);
 Vue.use(VueGlide);
+Vue.use(Vuex);
+Vue.use(VueAxios, axios);
+//Vue.prototype.$http = axios;
 
+export const store = new Vuex.Store({
+    state: {
+        count: 0,
+        socket: {
+            isConnected: false,
+            message: '',
+            reconnectError: false,
+        }
+    },
+    mutations: {
+        SOCKET_ONOPEN(state, event) {
+            state.socket.isConnected = true
+        },
+        SOCKET_ONCLOSE(state, event) {
+            state.socket.isConnected = false
+        },
+        SOCKET_ONERROR(state, event) {
+            console.error(state, event)
+        },
+        // default handler called for all methods
+        SOCKET_ONMESSAGE(state, message) {
+            state.message = message
+        },
+        // mutations for reconnect methods
+        [WebSocket.WS_RECONNECT](state, count) {
+            console.info(state, count)
+        },
+        [WebSocket.WS_RECONNECT_ERROR](state) {
+            state.socket.reconnectError = true;
+        },
+        increment(state) {
+            state.count++
+        }
+    }
+});
+Vue.use(VueNativeSock, 'ws://14.98.160.146:8090', { store: store, format: 'json' })
 
 Vue.config.productionTip = false;
 const vuetifyOptions = {}
@@ -182,4 +228,5 @@ new Vue({
     vuetify: new Vuetify(vuetifyOptions),
     router: router,
     render: h => h(App),
+    store
 }).$mount('#app');
