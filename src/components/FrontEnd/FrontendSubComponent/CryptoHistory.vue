@@ -581,7 +581,7 @@ export default {
         dealssubscribe() {
             this.$socket.sendObj({
                 method: 'deals.subscribe',
-                params: ['BTCBCH'],
+                params: [],
                 id: 1
             });
         },
@@ -665,14 +665,14 @@ export default {
         assetquery() {
             this.$socket.sendObj({
                 method: 'asset.query',
-                params: ['BTC'],
+                params: [],
                 id: 1
             });
         },
         assethistory() {
             this.$socket.sendObj({
                 method: 'asset.history',
-                params: ['BTC', null, 0, 0, 0, 200],
+                params: ['null', 'null', 0, 0, 0, 200],
                 id: 1
             });
         }
