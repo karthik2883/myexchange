@@ -10,8 +10,9 @@ import VueGlide from 'vue-glide-js';
 import Vuex from 'vuex';
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import Schema from './components/Common/Schema/WsSchema'
 
-
+console.log(Schema.ws_auth_schema);
 //import colors from 'vuetify/lib/util/colors';
 import VueNativeSock from 'vue-native-websocket'
 const routes = [
@@ -189,11 +190,13 @@ export const store = new Vuex.Store({
         socket: {
             isConnected: false,
             message: '',
-            reconnectError: false,
+            reconnectError: false
+
         }
     },
     mutations: {
         SOCKET_ONOPEN(state, event) {
+
             state.socket.isConnected = true
         },
         SOCKET_ONCLOSE(state, event) {
@@ -218,7 +221,15 @@ export const store = new Vuex.Store({
         }
     }
 });
-Vue.use(VueNativeSock, 'ws://14.98.160.146:8090', { store: store, format: 'json' })
+
+Vue.use(VueNativeSock, 'ws://14.98.160.146:8090', {
+    format: 'json',
+    store: store,
+    reconnection: true, // (Boolean) whether to reconnect automatically (false)
+    reconnectionAttempts: 5, // (Number) number of reconnection attempts before giving up (Infinity),
+    reconnectionDelay: 3000, // (Number) how long to initially wait before attempting a new (1000)
+
+});
 
 Vue.config.productionTip = false;
 const vuetifyOptions = {}
@@ -228,5 +239,40 @@ new Vue({
     vuetify: new Vuetify(vuetifyOptions),
     router: router,
     render: h => h(App),
-    store
+    store,
+    methods: {
+        socketping() {
+            //heart beat .... 1 sec id: should be int
+            this.ping = setInterval(() => {
+                Vue.prototype.$socket.sendObj({ method: 'server.ping', params: [], id: 1 });
+            }, 1000)
+
+        },
+        statesubscribe() {
+            this.subscribeBTCBCH = setInterval(() => {
+                Vue.prototype.$socket.sendObj({
+                    method: 'state.subscribe',
+                    params: ['BTCBCH'],
+                    id: 1
+                });
+            }, 1000);
+            this.subscribeBCHBTC = setInterval(() => {
+                Vue.prototype.$socket.sendObj({
+                    method: 'state.subscribe',
+                    params: ['BCHBTC'],
+                    id: 1
+                });
+            }, 1002);
+        }
+    },
+    created() {
+        this.socketping();
+        this.statesubscribe();
+    },
+    beforeDestroy() {
+        clearInterval(this.ping)
+        clearInterval(this.subscribeBTCBCH)
+        clearInterval(this.subscribeBCHBTC)
+    }
 }).$mount('#app');
+

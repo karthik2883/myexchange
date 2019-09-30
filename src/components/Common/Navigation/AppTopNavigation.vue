@@ -12,14 +12,15 @@
             <v-btn class="black--text" to="/marketcap" text>MARKETCAP</v-btn>-->
 
             <!--user login -->
-            <v-btn class="white--text" to="/exchange" text>EXCHANGE</v-btn>
+            <!-- <v-btn class="white--text" to="/exchange" text>EXCHANGE</v-btn> -->
             <v-btn class="white--text" to="/balances" text>BALANCES</v-btn>
-            <v-btn class="white--text" to="/order" text>ORDER</v-btn>
+            <!-- <v-btn class="white--text" to="/order" text>ORDER</v-btn>
             <v-btn class="white--text" to="/history" text>HISTORY</v-btn>
             <v-btn class="white--text" to="/ieo" text>IEO</v-btn>
             <v-btn class="white--text" to="/Supports" text>SUPPORTS</v-btn>
             <v-btn class="white--text" to="/faq" text>FAQ</v-btn>
             <v-btn class="white--text" to="/applytolist" text>APPLYTOLIST</v-btn>
+            -->
             <!--admin login -->
         </v-toolbar-items>
         <template v-if="$vuetify.breakpoint.smAndUp">

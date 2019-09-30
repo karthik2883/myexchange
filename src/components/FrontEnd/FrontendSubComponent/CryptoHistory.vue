@@ -5,8 +5,8 @@
                 <v-tabs fixed-tabs>
                     <v-tab class="body-1">BTC</v-tab>
                     <v-tab class="body-1">BCH</v-tab>
-                    <v-tab class="body-1">ETH</v-tab>
-                    <v-tab class="body-1">USDT</v-tab>
+                    <!-- <v-tab class="body-1">ETH</v-tab>
+                    <v-tab class="body-1">USDT</v-tab>-->
                     <v-tab-item>
                         <v-flex md12>
                             <v-layout row>
@@ -22,19 +22,21 @@
                                                 <th class="text-left subtitle-1">24H Highest</th>
                                                 <th class="text-left subtitle-1">24H Lowest</th>
                                                 <th class="text-left subtitle-1">24H Volume</th>
-                                                <th class="text-left subtitle-1">24H Value</th>
+                                                <th class="text-left subtitle-1">24H Deals</th>
 
                                                 <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr id="app" v-if="info">
+                                            <tr id="app" v-if="infoBTCBCH">
                                                 <td class="subtitle-1">BCH/BTC</td>
-                                                <td class="subtitle-1">{{info.deal}}</td>
-                                                <td class="subtitle-1">{{info.high}}</td>
-                                                <td class="subtitle-1">{{info.low}}</td>
-                                                <td class="subtitle-1">{{info.volume}}</td>
-                                                <td class="red--text subtitle-1">{{info.close}}</td>
+                                                <td class="subtitle-1">{{infoBTCBCH.deal}}</td>
+                                                <td class="subtitle-1">{{infoBTCBCH.high}}</td>
+                                                <td class="subtitle-1">{{infoBTCBCH.low}}</td>
+                                                <td class="subtitle-1">{{infoBTCBCH.volume}}</td>
+                                                <td
+                                                    class="red--text subtitle-1"
+                                                >{{infoBTCBCH.close}}</td>
                                                 <td class="green--text subtitle-1">>>Gotrade</td>
                                             </tr>
                                             <tr v-else>
@@ -44,9 +46,15 @@
                                                 <td class="subtitle-1">0</td>
                                                 <td class="subtitle-1">0</td>
                                                 <td class="red--text subtitle-1">0</td>
-                                                <td class="green--text subtitle-1">>>Gotrade</td>
+                                                <td class="green--text subtitle-1">
+                                                    <v-btn
+                                                        class="green--text"
+                                                        to="/trade"
+                                                        text
+                                                    >>>>Gotrade</v-btn>
+                                                </td>
                                             </tr>
-                                            <tr>
+                                            <!-- <tr>
                                                 <td class="subtitle-1">LTC/BTC</td>
                                                 <td class="subtitle-1">10136.15</td>
                                                 <td class="subtitle-1">32423243.89</td>
@@ -81,7 +89,7 @@
                                                 <td class="subtitle-1">32423243.89</td>
                                                 <td class="red--text subtitle-1">+15%</td>
                                                 <td class="green--text subtitle-1">>>Gotrade</td>
-                                            </tr>
+                                            </tr>-->
                                         </tbody>
                                     </v-simple-table>
                                 </v-card>
@@ -102,22 +110,39 @@
                                                 <th class="text-left subtitle-1">24H Highest</th>
                                                 <th class="text-left subtitle-1">24H Lowest</th>
                                                 <th class="text-left subtitle-1">24H Volume</th>
-                                                <th class="text-left subtitle-1">24H Value</th>
+                                                <th class="text-left subtitle-1">24H Deals</th>
 
                                                 <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
+                                            <tr id="app" v-if="infoBCHBTC">
                                                 <td class="subtitle-1">BTC/BCH</td>
-                                                <td class="subtitle-1">10136.15</td>
-                                                <td class="subtitle-1">32423243.89</td>
-                                                <td class="subtitle-1">32423243.89</td>
-                                                <td class="subtitle-1">32423243.89</td>
-                                                <td class="red--text subtitle-1">+15%</td>
+                                                <td class="subtitle-1">{{infoBCHBTC.deal}}</td>
+                                                <td class="subtitle-1">{{infoBCHBTC.high}}</td>
+                                                <td class="subtitle-1">{{infoBCHBTC.low}}</td>
+                                                <td class="subtitle-1">{{infoBCHBTC.volume}}</td>
+                                                <td
+                                                    class="red--text subtitle-1"
+                                                >{{infoBCHBTC.close}}</td>
                                                 <td class="green--text subtitle-1">>>Gotrade</td>
                                             </tr>
-                                            <tr>
+                                            <tr v-else>
+                                                <td class="subtitle-1">BTC/BCH</td>
+                                                <td class="subtitle-1">0</td>
+                                                <td class="subtitle-1">0</td>
+                                                <td class="subtitle-1">0</td>
+                                                <td class="subtitle-1">0</td>
+                                                <td class="red--text subtitle-1">0</td>
+                                                <td class="green--text subtitle-1">
+                                                    <v-btn
+                                                        class="green--text"
+                                                        to="/trade"
+                                                        text
+                                                    >>>>Gotrade</v-btn>
+                                                </td>
+                                            </tr>
+                                            <!-- <tr>
                                                 <td class="subtitle-1">LTC/BCH</td>
                                                 <td class="subtitle-1">10136.15</td>
                                                 <td class="subtitle-1">32423243.89</td>
@@ -152,14 +177,14 @@
                                                 <td class="subtitle-1">32423243.89</td>
                                                 <td class="red--text subtitle-1">+15%</td>
                                                 <td class="green--text subtitle-1">>>Gotrade</td>
-                                            </tr>
+                                            </tr>-->
                                         </tbody>
                                     </v-simple-table>
                                 </v-card>
                             </v-layout>
                         </v-flex>
                     </v-tab-item>
-                    <v-tab-item>
+                    <!-- <v-tab-item>
                         <v-flex md12>
                             <v-layout row>
                                 <v-card class="mx-auto pa-2" style=" width:95%;">
@@ -298,11 +323,11 @@
                                 </v-card>
                             </v-layout>
                         </v-flex>
-                    </v-tab-item>
+                    </v-tab-item>-->
                 </v-tabs>
             </v-flex>
 
-            <v-flex md12 class="pa-2" style="color:red">
+            <!-- <v-flex md12 class="pa-2" style="color:red">
                 <v-layout md12 row>
                     <v-card row md12 class="mx-auto pa-2" style=" width:95%;">
                         <v-layout md12 row>
@@ -439,7 +464,7 @@
                         </v-layout>
                     </v-card>
                 </v-layout>
-            </v-flex>
+            </v-flex>-->
         </v-layout>
     </v-flex>
 </template>
@@ -448,11 +473,13 @@ export default {
     name: 'CryptoHistory',
     data() {
         return {
-            info: null
+            infoBTCBCH: null,
+            infoBCHBTC: null
         };
     },
     created() {
         //            this.statesubscribe();
+
         this.$options.sockets.onmessage = data => this.messageReceived(data);
     },
     // mounted() {
@@ -468,7 +495,13 @@ export default {
             try {
                 console.log('', raw_message.data);
                 var x = JSON.parse(raw_message.data);
-                this.info = x.params[1];
+                // if(infoBCHBTC)
+                console.log('key', Object.values(x.params[0]));
+                if (x.params[0] === 'BTCBCH') {
+                    this.infoBTCBCH = x.params[1];
+                } else {
+                    this.infoBCHBTC = x.params[1];
+                }
                 this.$forceUpdate();
             } catch (e) {
                 console.log(e);
