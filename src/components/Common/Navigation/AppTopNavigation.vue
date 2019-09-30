@@ -1,7 +1,8 @@
 <template>
-    <v-app-bar app fixed dark color="blue-grey darken-4">
-        <v-btn icon href="/home" class="warning">
-            <img :src="require('@/assets/everus.png')" alt="everus" width="50px" height="50px" />
+    <v-app-bar app fixed dark color="secondary darken-1">
+        <v-btn class="white--text title" href="/home" text>
+            <v-icon>mdi-nuke</v-icon>Brexily
+            <!-- <img :src="require('@/assets/everus.png')" alt="everus" width="50px" height="50px" /> -->
         </v-btn>
 
         <v-spacer></v-spacer>

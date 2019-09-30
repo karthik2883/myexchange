@@ -35,9 +35,15 @@
                                                 <td class="subtitle-1">{{infoBTCBCH.low}}</td>
                                                 <td class="subtitle-1">{{infoBTCBCH.volume}}</td>
                                                 <td
-                                                    class="red--text subtitle-1"
+                                                    class="green--text subtitle-1"
                                                 >{{infoBTCBCH.close}}</td>
-                                                <td class="green--text subtitle-1">>>Gotrade</td>
+                                                <td class="green--text subtitle-1">
+                                                    <v-btn
+                                                        class="green--text"
+                                                        to="/trade?currency=btc&dest=bch"
+                                                        text
+                                                    >>>>Gotrade</v-btn>
+                                                </td>
                                             </tr>
                                             <tr v-else>
                                                 <td class="subtitle-1">BCH/BTC</td>
@@ -45,7 +51,7 @@
                                                 <td class="subtitle-1">0</td>
                                                 <td class="subtitle-1">0</td>
                                                 <td class="subtitle-1">0</td>
-                                                <td class="red--text subtitle-1">0</td>
+                                                <td class="green--text subtitle-1">0</td>
                                                 <td class="green--text subtitle-1">
                                                     <v-btn
                                                         class="green--text"
@@ -123,9 +129,15 @@
                                                 <td class="subtitle-1">{{infoBCHBTC.low}}</td>
                                                 <td class="subtitle-1">{{infoBCHBTC.volume}}</td>
                                                 <td
-                                                    class="red--text subtitle-1"
+                                                    class="green--text subtitle-1"
                                                 >{{infoBCHBTC.close}}</td>
-                                                <td class="green--text subtitle-1">>>Gotrade</td>
+                                                <td class="green--text subtitle-1">
+                                                    <v-btn
+                                                        class="green--text"
+                                                        to="/trade?currency=bch&dest=btc"
+                                                        text
+                                                    >>>>Gotrade</v-btn>
+                                                </td>
                                             </tr>
                                             <tr v-else>
                                                 <td class="subtitle-1">BTC/BCH</td>
@@ -479,7 +491,6 @@ export default {
     },
     created() {
         //            this.statesubscribe();
-
         this.$options.sockets.onmessage = data => this.messageReceived(data);
     },
     // mounted() {
@@ -496,11 +507,15 @@ export default {
                 console.log('', raw_message.data);
                 var x = JSON.parse(raw_message.data);
                 // if(infoBCHBTC)
-                console.log('key', Object.values(x.params[0]));
+                // console.log('key', Object.values(x.params[0]));
                 if (x.params[0] === 'BTCBCH') {
                     this.infoBTCBCH = x.params[1];
+
+                    console.log('eventFired');
                 } else {
                     this.infoBCHBTC = x.params[1];
+
+                    console.log('eventFired');
                 }
                 this.$forceUpdate();
             } catch (e) {

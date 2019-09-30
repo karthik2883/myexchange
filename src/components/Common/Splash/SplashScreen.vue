@@ -11,7 +11,7 @@
                 v-if="item !== 'img'"
             >{{item}}</span>
             <span class="logo-letter" v-else>
-                <img src="@/assets/everus.png" />
+                <v-icon x-large>mdi-nuke</v-icon>
             </span>
         </div>
     </div>
@@ -39,11 +39,13 @@ export default {
 
                 'img',
                 '  ',
-                'E',
-                'V',
+                'B',
                 'R',
                 'E',
-                'X'
+                'X',
+                'I',
+                'L',
+                'Y'
             ]
         };
     },

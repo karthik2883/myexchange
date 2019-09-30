@@ -173,7 +173,6 @@ const router = new VueRouter({ routes, mode: 'history' });
 
 router.beforeEach((to, from, next) => {
     document.title = `EvrEx - ${to.meta.title}`
-
     next()
 });
 
@@ -221,7 +220,6 @@ export const store = new Vuex.Store({
         }
     }
 });
-
 Vue.use(VueNativeSock, 'ws://14.98.160.146:8090', {
     format: 'json',
     store: store,

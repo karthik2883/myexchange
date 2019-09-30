@@ -19,15 +19,15 @@ export default {
                 info: 'Now IEO on the EvrEx!'
             },
             {
-                colors: 'primary',
+                colors: 'secondary',
                 info: 'Official license of the European Union'
             },
             {
-                colors: 'accent',
+                colors: 'secondary',
                 info: 'Instant 24/7 user support'
             },
             {
-                colors: 'primary',
+                colors: 'secondary',
                 info: 'Exchange protection by OWASP TOP10 standard'
             },
             {
