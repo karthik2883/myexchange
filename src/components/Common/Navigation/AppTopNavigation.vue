@@ -1,6 +1,6 @@
 <template>
     <v-app-bar app fixed dark color="secondary darken-1">
-        <v-btn class="white--text title" href="/home" text>
+        <v-btn class="white--text" href="/home" text>
             <v-icon>mdi-nuke</v-icon>Brexily
             <!-- <img :src="require('@/assets/everus.png')" alt="everus" width="50px" height="50px" /> -->
         </v-btn>
@@ -8,7 +8,7 @@
         <v-spacer></v-spacer>
 
         <v-toolbar-items class="hidden-sm-and-down">
-            <v-btn class="white--text" to="/trade" text>TRADE</v-btn>
+            <v-btn class="white--text" to="/trade?currency=btc&dest=bch" text>TRADE</v-btn>
             <!-- <v-btn class="black--text" to="/overview" text>OVERVIEW</v-btn>
             <v-btn class="black--text" to="/marketcap" text>MARKETCAP</v-btn>-->
 

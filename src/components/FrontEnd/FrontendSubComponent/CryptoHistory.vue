@@ -504,18 +504,18 @@ export default {
         messageReceived: function(raw_message) {
             //  this.info = JSON.stringify(raw_message.data);
             try {
-                console.log('', raw_message.data);
+                //  console.log('', raw_message.data);
                 var x = JSON.parse(raw_message.data);
                 // if(infoBCHBTC)
                 // console.log('key', Object.values(x.params[0]));
                 if (x.params[0] === 'BTCBCH') {
                     this.infoBTCBCH = x.params[1];
 
-                    console.log('eventFired');
+                   
                 } else {
                     this.infoBCHBTC = x.params[1];
 
-                    console.log('eventFired');
+                 
                 }
                 this.$forceUpdate();
             } catch (e) {
