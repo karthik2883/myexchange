@@ -510,12 +510,8 @@ export default {
                 // console.log('key', Object.values(x.params[0]));
                 if (x.params[0] === 'BTCBCH') {
                     this.infoBTCBCH = x.params[1];
-
-                   
                 } else {
                     this.infoBCHBTC = x.params[1];
-
-                 
                 }
                 this.$forceUpdate();
             } catch (e) {

@@ -83,7 +83,7 @@ export default {
                 }
                 this.$forceUpdate();
             } catch (e) {
-                console.log(e);
+                //  console.log(e);
             }
         }
     }

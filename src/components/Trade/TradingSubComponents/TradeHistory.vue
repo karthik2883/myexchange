@@ -17,72 +17,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <!-- <tr v-for="tradeHistory in dt">
                             <td class="subtitle-1" style="color:red">SELL</td>
                             <td class="subtitle-1">11:51:58</td>
                             <td class="subtitle-1">119.78</td>
                             <td class="subtitle-1">0.0498</td>
-                        </tr>
-                        <tr>
-                            <td class="subtitle-1" style="color:red">SELL</td>
-                            <td class="subtitle-1">11:51:58</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
-                        </tr>
-                        <tr>
-                            <td class="subtitle-1" style="color:red">SELL</td>
-                            <td class="subtitle-1">11:51:58</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
-                        </tr>
-                        <tr>
-                            <td class="subtitle-1" style="color:red">SELL</td>
-                            <td class="subtitle-1">11:51:58</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
-                        </tr>
-                        <tr>
-                            <td class="subtitle-1" style="color:red">SELL</td>
-                            <td class="subtitle-1">11:51:58</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
-                        </tr>
-                        <tr>
-                            <td class="subtitle-1" style="color:red">SELL</td>
-                            <td class="subtitle-1">11:51:58</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
-                        </tr>
-                        <tr>
-                            <td class="subtitle-1" style="color:red">SELL</td>
-                            <td class="subtitle-1">11:51:58</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
-                        </tr>
-                        <tr>
-                            <td class="subtitle-1" style="color:red">SELL</td>
-                            <td class="subtitle-1">11:51:58</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
-                        </tr>
-                        <tr>
-                            <td class="subtitle-1" style="color:red">SELL</td>
-                            <td class="subtitle-1">11:51:58</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
-                        </tr>
-                        <tr>
-                            <td class="subtitle-1" style="color:red">SELL</td>
-                            <td class="subtitle-1">11:51:58</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
-                        </tr>
-                        <tr>
-                            <td class="subtitle-1" style="color:green">BUY</td>
-                            <td class="subtitle-1">11:51:58</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
-                        </tr>
+                        </tr>-->
+                        {{tradeHistory}}
                     </tbody>
                 </v-simple-table>
             </v-card>
@@ -90,10 +31,33 @@
     </v-flex>
 </template>
 <script>
+import Http from '../../Common/Schema/HttpSchema';
+//import AppBottomNavigation from '../../Common/Navigation/AppBottomNavigation';
 export default {
     name: 'TradeHistory',
     data() {
-        return {};
+        return {
+            tradeHistory: null
+        };
+    },
+    created() {
+        var call_id = 1;
+        var method = 'market.deals';
+        var params = ['BTCBCH', 50, 0];
+        console.log(method);
+        var postdata = JSON.stringify({
+            id: call_id,
+            method: method,
+            params: params
+        });
+        this.axios
+            .post('http://192.168.1.123:9000', {
+                postdata
+            })
+            .then(response => {
+                console.log('response', response);
+                this.tradeHistory = response.data;
+            });
     }
 };
 </script>

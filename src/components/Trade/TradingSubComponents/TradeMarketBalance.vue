@@ -16,12 +16,14 @@
                                     :key="0"
                                     class="body-1 text-left"
                                     @click="getMarket"
+                                    :data-id="0"
                                 >BTC</v-tab>
                                 <v-tab
                                     :tabindex="1"
                                     :key="1"
                                     class="body-1 text-left"
                                     @click="getMarket"
+                                    :data-id="1"
                                 >BCH</v-tab>
                                 <!-- <v-tab class="body-1">ETH</v-tab>
                                 <v-tab class="body-1">USDT</v-tab>-->
@@ -351,7 +353,6 @@ export default {
         };
     },
     created() {
-        //  console.log(this.$route.query.currency);
         this.$options.sockets.onmessage = data => this.messageReceived(data);
         if (this.$route.query.currency === 'btc') {
             this.selectedTab = 0;
@@ -384,21 +385,17 @@ export default {
                 }
                 this.$forceUpdate();
             } catch (e) {
-                console.log(e);
+                //console.log(e);
             }
         },
-        getMarket: function(e) {
-            console.log(e.srcElement.firstChild);
-            console.log(e.srcElement.firstChild);
-            // alert(e.srcElement.firstChild);
-            if (e.srcElement.firstChild) {
-                console.log(this.$router);
-
-                this.$router.push('/trade?currency=btc&dest=bch');
-                console.log(e.srcElement.firstChild);
-                console.log(e.srcElement.firstChild);
+        getMarket: function(event) {
+            //tab and get all the currency dataset id
+            console.log(event.target.dataset);
+            console.log('ID:', event.target.dataset.id);
+            if (event.target.dataset.id === '0') {
+                console.log('BTC');
             } else {
-                //this.$router.go('/trade?currency=bch&dest=btc');
+                console.log('BCH');
             }
         }
     }
