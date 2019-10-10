@@ -1,5 +1,5 @@
 <template>
-    <v-app class="secondary">
+    <v-app class="secondary headline font-weight-thin">
         <AppTopNavigation v-if="$route.meta.topappbar" />
         <v-content>
             <v-container class="py-0 disp-flex flex-center-y flex-grow pa-10">
@@ -74,8 +74,5 @@ export default {
 .fade-enter,
 .fade-leave-active {
     opacity: 0;
-}
-.v-card {
-    border-radius: 0px;
 }
 </style>

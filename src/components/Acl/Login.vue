@@ -5,7 +5,7 @@
                 <v-col cols="12" sm="8" md="4">
                     <v-card class="elevation-12">
                         <v-toolbar color="blue-grey darken-4">
-                            <v-toolbar-title class="white--text">Login form</v-toolbar-title>
+                            <v-toolbar-title class="white--text">Login</v-toolbar-title>
                             <div class="flex-grow-1"></div>
                             <v-tooltip bottom>
                                 <template v-slot:activator="{ on }">
@@ -17,15 +17,7 @@
                             </v-tooltip>
                             <v-tooltip right>
                                 <template v-slot:activator="{ on }">
-                                    <v-btn
-                                        icon
-                                        large
-                                        href="https://codepen.io/johnjleider/pen/pMvGQO"
-                                        target="_blank"
-                                        v-on="on"
-                                    >
-                                        <v-icon>mdi-codepen</v-icon>
-                                    </v-btn>
+                                    <v-icon>mdi-codepen</v-icon>
                                 </template>
                                 <span>Codepen</span>
                             </v-tooltip>
@@ -44,7 +36,7 @@
                         </v-card-text>
                         <v-card-actions>
                             <div class="flex-grow-1"></div>
-                            <v-btn color="primary">Login</v-btn>
+                            <v-btn color="secondary">Login</v-btn>
                         </v-card-actions>
                     </v-card>
                 </v-col>

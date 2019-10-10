@@ -1,6 +1,6 @@
   <template>
     <v-flex md12>
-        <v-layout row>
+        <v-layout row class="headline font-weight-light">
             <v-flex md12 class="pa-2">
                 <v-tabs fixed-tabs>
                     <v-tab class="body-1">BTC</v-tab>

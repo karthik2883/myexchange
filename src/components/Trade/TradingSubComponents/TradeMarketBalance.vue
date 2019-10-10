@@ -15,14 +15,14 @@
                                     :tabindex="0"
                                     :key="0"
                                     class="title font-weight-light text-left"
-                                    @click="getMarket"
+                                    href="/trade?currency=btc&dest=bch"
                                     :data-id="0"
                                 >BTC</v-tab>
                                 <v-tab
                                     :tabindex="1"
                                     :key="1"
                                     class="title font-weight-light text-left"
-                                    @click="getMarket"
+                                    href="/trade?currency=bch&dest=btc"
                                     :data-id="1"
                                 >BCH</v-tab>
                                 <!-- <v-tab class="body-1">ETH</v-tab>
@@ -59,13 +59,13 @@
                                                                     class="body-1 text-center font-weight-light"
                                                                 >BTCBCH</td>
                                                                 <td
-                                                                    class="body-1 text-center"
+                                                                    class="body-1 text-center font-weight-light"
                                                                 >{{infoBTCBCH.high}}</td>
                                                                 <td
-                                                                    class="body-1 text-center"
+                                                                    class="body-1 text-center font-weight-light"
                                                                 >{{infoBTCBCH.volume}}</td>
                                                                 <td
-                                                                    class="body-1 text-center"
+                                                                    class="body-1 text-center font-weight-light green--text"
                                                                 >+{{infoBTCBCH.open * infoBTCBCH.high /100}}%</td>
                                                             </tr>
                                                             <!-- <tr>

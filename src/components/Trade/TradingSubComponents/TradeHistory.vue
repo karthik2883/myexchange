@@ -1,6 +1,6 @@
   <template>
     <v-flex md12>
-        <v-layout row>
+        <v-layout row class="font-weight-light">
             <v-card class="mx-auto" style=" width:95%;" :elevation="24">
                 <v-flex md12>
                     <v-layout row>
@@ -19,15 +19,19 @@
                     <tbody>
                         <tr v-for="tH in tradeHistory">
                             <td
-                                class="subtitle-1"
+                                class="body-1 text-center font-weight-light"
                                 v-if="tH.type =='buy'"
                                 style="color:green"
                             >{{ tH.type }}</td>
-                            <td class="subtitle-1" v-else style="color:red">{{ tH.type }}</td>
+                            <td
+                                class="body-1 text-center font-weight-light"
+                                v-else
+                                style="color:red"
+                            >{{ tH.type }}</td>
 
-                            <td class="subtitle-1">{{formatTime(tH.time)}}</td>
-                            <td class="subtitle-1">{{tH.price}}</td>
-                            <td class="subtitle-1">{{tH.amount}}</td>
+                            <td class="subtitle-1 font-weight-light">{{formatTime(tH.time)}}</td>
+                            <td class="subtitle-1 font-weight-light">{{tH.price}}</td>
+                            <td class="subtitle-1 font-weight-light">{{tH.amount}}</td>
                         </tr>
                     </tbody>
                 </v-simple-table>

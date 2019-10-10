@@ -9,7 +9,7 @@
                 </v-flex>
                 <form>
                     <v-flex md12>
-                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1">
+                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1 font-weight-light">
                             <v-flex md4>
                                 <v-spacer></v-spacer>
                                 <v-label class="body-1">Price</v-label>
@@ -20,7 +20,7 @@
                         </v-layout>
                     </v-flex>
                     <v-flex md12>
-                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1">
+                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1 font-weight-light">
                             <v-flex md4>
                                 <v-spacer></v-spacer>
                                 <v-label class="body-1">Amount</v-label>
@@ -31,7 +31,7 @@
                         </v-layout>
                     </v-flex>
                     <v-flex md12>
-                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1">
+                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1 font-weight-light">
                             <v-flex md4>
                                 <v-spacer></v-spacer>
                                 <v-label class="body-1">Total</v-label>
@@ -42,7 +42,7 @@
                         </v-layout>
                     </v-flex>
                     <v-flex md12>
-                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1">
+                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1 font-weight-light">
                             <v-flex md4>
                                 <v-spacer></v-spacer>
                                 <v-label>Total + fee 0.2%</v-label>
@@ -70,7 +70,7 @@
                 </v-flex>
                 <form>
                     <v-flex md12>
-                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1">
+                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1 font-weight-light">
                             <v-flex md4>
                                 <v-spacer></v-spacer>
                                 <v-label class="body-1">Price</v-label>
@@ -81,7 +81,7 @@
                         </v-layout>
                     </v-flex>
                     <v-flex md12>
-                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1">
+                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1 font-weight-light">
                             <v-flex md4>
                                 <v-spacer></v-spacer>
                                 <v-label class="body-1">Amount</v-label>
@@ -92,7 +92,7 @@
                         </v-layout>
                     </v-flex>
                     <v-flex md12>
-                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1">
+                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1 font-weight-light">
                             <v-flex md4>
                                 <v-spacer></v-spacer>
                                 <v-label class="body-1">Total</v-label>
@@ -103,7 +103,7 @@
                         </v-layout>
                     </v-flex>
                     <v-flex md12>
-                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1">
+                        <v-layout row wrap align-center class="pa-1 ml-1 mr-1 font-weight-light">
                             <v-flex md4>
                                 <v-spacer></v-spacer>
                                 <v-label class="body-1">Total + fee 0.2%</v-label>

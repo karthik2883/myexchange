@@ -11,54 +11,54 @@
                     </v-layout>
                 </v-flex>
 
-                <v-simple-table height="300px">
+                <v-simple-table height="300px" class="font-weight-light">
                     <thead>
                         <tr>
-                            <th class="text-left body-1">PRICE</th>
-                            <th class="text-left body-1">NEO</th>
-                            <th class="text-left body-1">ETH</th>
+                            <th class="text-left body-1 font-weight-light">PRICE</th>
+                            <th class="text-left body-1 font-weight-light">NEO</th>
+                            <th class="text-left body-1 font-weight-light">ETH</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="subtitle-1" style="color:green">0.0498</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
+                            <td class="subtitle-1 font-weight-light" style="color:green">0.0498</td>
+                            <td class="subtitle-1 font-weight-light">119.78</td>
+                            <td class="subtitle-1 font-weight-light">0.0498</td>
                         </tr>
                         <tr>
-                            <td class="subtitle-1" style="color:green">0.0498</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
+                            <td class="subtitle-1 font-weight-light" style="color:green">0.0498</td>
+                            <td class="subtitle-1 font-weight-light">119.78</td>
+                            <td class="subtitle-1 font-weight-light">0.0498</td>
                         </tr>
                         <tr>
-                            <td class="subtitle-1" style="color:green">0.0498</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
+                            <td class="subtitle-1 font-weight-light" style="color:green">0.0498</td>
+                            <td class="subtitle-1 font-weight-light">119.78</td>
+                            <td class="subtitle-1 font-weight-light">0.0498</td>
                         </tr>
                         <tr>
-                            <td class="subtitle-1" style="color:green">0.0498</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
+                            <td class="subtitle-1 font-weight-light" style="color:green">0.0498</td>
+                            <td class="subtitle-1 font-weight-light">119.78</td>
+                            <td class="subtitle-1 font-weight-light">0.0498</td>
                         </tr>
                         <tr>
-                            <td class="subtitle-1" style="color:green">0.0498</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
+                            <td class="subtitle-1 font-weight-light" style="color:green">0.0498</td>
+                            <td class="subtitle-1 font-weight-light">119.78</td>
+                            <td class="subtitle-1 font-weight-light">0.0498</td>
                         </tr>
                         <tr>
-                            <td class="subtitle-1" style="color:green">0.0498</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
+                            <td class="subtitle-1 font-weight-light" style="color:green">0.0498</td>
+                            <td class="subtitle-1 font-weight-light">119.78</td>
+                            <td class="subtitle-1 font-weight-light">0.0498</td>
                         </tr>
                         <tr>
-                            <td class="subtitle-1" style="color:green">0.0498</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
+                            <td class="subtitle-1 font-weight-light" style="color:green">0.0498</td>
+                            <td class="subtitle-1 font-weight-light">119.78</td>
+                            <td class="subtitle-1 font-weight-light">0.0498</td>
                         </tr>
                         <tr>
-                            <td class="subtitle-1" style="color:green">0.0498</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
+                            <td class="subtitle-1 font-weight-light" style="color:green">0.0498</td>
+                            <td class="subtitle-1 font-weight-light">119.78</td>
+                            <td class="subtitle-1 font-weight-light">0.0498</td>
                         </tr>
                     </tbody>
                 </v-simple-table>
@@ -78,16 +78,16 @@
                 <v-simple-table height="300px">
                     <thead>
                         <tr>
-                            <th class="text-left body-1">PRICE</th>
-                            <th class="text-left body-1">NEO</th>
-                            <th class="text-left body-1">ETH</th>
+                            <th class="text-left body-1 font-weight-light">PRICE</th>
+                            <th class="text-left body-1 font-weight-light">NEO</th>
+                            <th class="text-left body-1 font-weight-light">ETH</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="subtitle-1" style="color:green">0.0498</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
+                            <td class="subtitle-1 font-weight-light" style="color:green">0.0498</td>
+                            <td class="subtitle-1 font-weight-light">119.78</td>
+                            <td class="subtitle-1 font-weight-light">0.0498</td>
                         </tr>
                         <tr>
                             <td class="subtitle-1" style="color:green">0.0498</td>
@@ -95,34 +95,34 @@
                             <td class="subtitle-1">0.0498</td>
                         </tr>
                         <tr>
-                            <td class="subtitle-1" style="color:green">0.0498</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
+                            <td class="subtitle-1 font-weight-light" style="color:green">0.0498</td>
+                            <td class="subtitle-1 font-weight-light">119.78</td>
+                            <td class="subtitle-1 font-weight-light">0.0498</td>
                         </tr>
                         <tr>
-                            <td class="subtitle-1" style="color:green">0.0498</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
+                            <td class="subtitle-1 font-weight-light" style="color:green">0.0498</td>
+                            <td class="subtitle-1 font-weight-light">119.78</td>
+                            <td class="subtitle-1 font-weight-light">0.0498</td>
                         </tr>
                         <tr>
-                            <td class="subtitle-1" style="color:green">0.0498</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
+                            <td class="subtitle-1 font-weight-light" style="color:green">0.0498</td>
+                            <td class="subtitle-1 font-weight-light">119.78</td>
+                            <td class="subtitle-1 font-weight-light">0.0498</td>
                         </tr>
                         <tr>
-                            <td class="subtitle-1" style="color:green">0.0498</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
+                            <td class="subtitle-1 font-weight-light" style="color:green">0.0498</td>
+                            <td class="subtitle-1 font-weight-light">119.78</td>
+                            <td class="subtitle-1 font-weight-light">0.0498</td>
                         </tr>
                         <tr>
-                            <td class="subtitle-1" style="color:green">0.0498</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
+                            <td class="subtitle-1 font-weight-light" style="color:green">0.0498</td>
+                            <td class="subtitle-1 font-weight-light">119.78</td>
+                            <td class="subtitle-1 font-weight-light">0.0498</td>
                         </tr>
                         <tr>
-                            <td class="subtitle-1" style="color:green">0.0498</td>
-                            <td class="subtitle-1">119.78</td>
-                            <td class="subtitle-1">0.0498</td>
+                            <td class="subtitle-1 font-weight-light" style="color:green">0.0498</td>
+                            <td class="subtitle-1 font-weight-light">119.78</td>
+                            <td class="subtitle-1 font-weight-light">0.0498</td>
                         </tr>
                     </tbody>
                 </v-simple-table>
