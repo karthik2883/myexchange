@@ -16,7 +16,7 @@ export default {
         var Informations = [
             {
                 colors: 'secondary',
-                info: 'Now IEO on the EvrEx!'
+                info: 'Now IEO on the Brexily!'
             },
             {
                 colors: 'secondary',
@@ -32,7 +32,7 @@ export default {
             },
             {
                 colors: 'secondary',
-                info: 'EvrEx mobile app is now available!'
+                info: 'Brexily mobile app is now available!'
             }
         ];
         return { Informations };

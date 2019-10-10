@@ -3,8 +3,8 @@
         <v-layout row>
             <v-flex md12 class="pa-2" :elevation="-2">
                 <v-tabs fixed-tabs>
-                    <v-tab class="body-1">Market</v-tab>
-                    <v-tab class="body-1">Balances</v-tab>
+                    <v-tab class="headline font-weight-thin">Market</v-tab>
+                    <v-tab class="headline font-weight-thin">Balances</v-tab>
                     <v-tab-item>
                         <v-flex md12 class="pa-2">
                             <v-flex md4 class="pa-2">
@@ -14,14 +14,14 @@
                                 <v-tab
                                     :tabindex="0"
                                     :key="0"
-                                    class="body-1 text-left"
+                                    class="title font-weight-light text-left"
                                     @click="getMarket"
                                     :data-id="0"
                                 >BTC</v-tab>
                                 <v-tab
                                     :tabindex="1"
                                     :key="1"
-                                    class="body-1 text-left"
+                                    class="title font-weight-light text-left"
                                     @click="getMarket"
                                     :data-id="1"
                                 >BCH</v-tab>
@@ -40,23 +40,23 @@
                                                         <thead>
                                                             <tr>
                                                                 <th
-                                                                    class="subtitle-1 text-center text-capitalize"
+                                                                    class="subtitle-1 font-weight-regular text-center text-capitalize"
                                                                 >Market</th>
                                                                 <th
-                                                                    class="subtitle-1 text-center text-capitalize"
+                                                                    class="subtitle-1 font-weight-regular text-center text-capitalize"
                                                                 >Price</th>
                                                                 <th
-                                                                    class="subtitle-1 text-center text-capitalize"
+                                                                    class="subtitle-1 font-weight-regular text-center text-capitalize"
                                                                 >Volume</th>
                                                                 <th
-                                                                    class="subtitle-1 text-center text-capitalize"
+                                                                    class="subtitle-1 font-weight-regular text-center text-capitalize"
                                                                 >Change</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr>
+                                                            <tr v-if="infoBTCBCH">
                                                                 <td
-                                                                    class="body-1 text-center text-capitalize"
+                                                                    class="body-1 text-center font-weight-light"
                                                                 >BTCBCH</td>
                                                                 <td
                                                                     class="body-1 text-center"
@@ -112,23 +112,23 @@
                                                         <thead>
                                                             <tr>
                                                                 <th
-                                                                    class="subtitle-1 text-center text-capitalize"
+                                                                    class="subtitle-1 font-weight-regular text-center text-capitalize"
                                                                 >Market</th>
                                                                 <th
-                                                                    class="subtitle-1 text-center text-capitalize"
+                                                                    class="subtitle-1 font-weight-regular text-center text-capitalize"
                                                                 >Price</th>
                                                                 <th
-                                                                    class="subtitle-1 text-center text-capitalize"
+                                                                    class="subtitle-1 font-weight-regular text-center text-capitalize"
                                                                 >Volume</th>
                                                                 <th
-                                                                    class="subtitle-1 text-center text-capitalize"
+                                                                    class="subtitle-1 font-weight-regular text-center text-capitalize"
                                                                 >Change</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr>
+                                                            <tr v-if="infoBTCBCH">
                                                                 <td
-                                                                    class="body-1 text-center text-capitalize"
+                                                                    class="body-1 text-center font-weight-light text-capitalize"
                                                                 >BCHBTC</td>
                                                                 <td
                                                                     class="body-1 text-center"
@@ -401,3 +401,8 @@ export default {
     }
 };
 </script>
+<style scoped>
+.v-card {
+    border-radius: 0px !important;
+}
+</style>

@@ -1,4 +1,4 @@
-# evrex
+# Brexily
 
 ## Project setup
 ```

@@ -1,11 +1,11 @@
 <template>
-    <v-layout row class="pa-2">
-        <v-flex md6 class="pa-2">
-            <v-card class="pa-2" :elevation="24">
+    <v-layout row class="pa-1">
+        <v-flex md6 class="pa-1">
+            <v-card class="pa-1" :elevation="24">
                 <v-flex md12>
-                    <v-layout row>
-                        <v-flex md6 class="pa-2 body-1">Buy Order</v-flex>
-                        <v-flex md6 class="pa-2">
+                    <v-layout row class="pa-1 ml-1 mr-1">
+                        <v-flex md6 class="headline font-weight-thin">Buy Order</v-flex>
+                        <v-flex md6 class>
                             <v-select filled label="Decimals" :items="items"></v-select>
                         </v-flex>
                     </v-layout>
@@ -64,12 +64,12 @@
                 </v-simple-table>
             </v-card>
         </v-flex>
-        <v-flex md6 class="pa-2">
-            <v-card class="pa-2" :elevation="24">
+        <v-flex md6 class="pa-1">
+            <v-card class="pa-1" :elevation="24">
                 <v-flex md12>
-                    <v-layout row>
-                        <v-flex md6 class="pa-2 body-1">Sell Order</v-flex>
-                        <v-flex md6 class="pa-2">
+                    <v-layout row class="pa-1 ml-1 mr-1">
+                        <v-flex md6 class="headline font-weight-thin">Sell Order</v-flex>
+                        <v-flex md6>
                             <v-select filled label="Decimals" :items="items"></v-select>
                         </v-flex>
                     </v-layout>
@@ -138,3 +138,8 @@ export default {
     })
 };
 </script>
+<style scoped>
+.v-card {
+    border-radius: 0px !important;
+}
+</style>

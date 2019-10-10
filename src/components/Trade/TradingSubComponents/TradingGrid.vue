@@ -68,3 +68,8 @@ export default {
     }
 };
 </script>
+<style scoped>
+.v-card {
+    border-radius: 0px !important;
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
     <v-container class="pa-0">
-        <v-card :elevation="24">
+        <v-card :elevation="24" flat>
             <v-container fluid>
                 <v-layout row md12 v-if="infoBTCBCH">
                     <v-flex md2 sm3 class="pa-1">
@@ -40,6 +40,41 @@
                         <v-icon>mdi-lightbulb-on-outline</v-icon>
                     </v-btn>
                 </v-layout>
+                <v-layout row md12 v-else>
+                    <v-flex md2 sm3 class="pa-1">
+                        <div class="overline">BTCBCH</div>
+                        <div class="body-1">0</div>
+                        <div class="body-1">0 USD</div>
+                    </v-flex>
+                    <v-divider style="background-color:green;" class="mx-1" vertical></v-divider>
+                    <v-flex md2 sm3>
+                        <div class="overline">24H Change</div>
+                        <div class="body-1">+0%</div>
+                    </v-flex>
+                    <v-divider style="background-color:green;" class="mx-1" vertical></v-divider>
+                    <v-flex md2 sm3>
+                        <div class="overline">24H Highest</div>
+                        <div class="body-1">0 BTC</div>
+                    </v-flex>
+                    <v-divider style="background-color:green;" class="mx-1" vertical></v-divider>
+                    <v-flex md2 sm3>
+                        <div class="overline">24H Lowest</div>
+                        <div class="body-1">0 BTC</div>
+                    </v-flex>
+                    <v-divider style="background-color:green;" class="mx-1" vertical></v-divider>
+                    <v-flex md2 sm3>
+                        <div class="overline">24H Volume/Value</div>
+                        <div class="body-1">0</div>
+                    </v-flex>
+                    <v-divider style="background-color:green;" class="mx-1" vertical></v-divider>
+                    <v-flex>
+                        <div class="overline">BCHBTC</div>
+                        <div class="body-1">0</div>
+                    </v-flex>
+                    <v-btn class="mx-4" fab dark small color="secondary" elevation="-10">
+                        <v-icon>mdi-lightbulb-on-outline</v-icon>
+                    </v-btn>
+                </v-layout>
             </v-container>
         </v-card>
     </v-container>
@@ -62,7 +97,7 @@ export default {
     methods: {
         messageReceived: function(raw_message) {
             try {
-                //    console.log('', raw_message.data);
+                console.log('', raw_message.data);
                 var x = JSON.parse(raw_message.data);
                 if (this.$route.query.currency === 'btc') {
                     this.mainTitle = 'BTC/BCH';
@@ -89,3 +124,8 @@ export default {
     }
 };
 </script>
+<style scoped>
+.v-card {
+    border-radius: 0px !important;
+}
+</style>

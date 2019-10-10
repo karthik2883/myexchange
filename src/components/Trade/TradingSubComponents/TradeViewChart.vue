@@ -2,7 +2,7 @@
     <v-container fluid>
         <v-layout row>
             <v-flex md12>
-                <v-card :elevation="24">
+                <v-card :elevation="24" flat>
                     <v-layout row wrap align-center>
                         <v-flex>
                             <VueTradingView
@@ -39,3 +39,8 @@ export default {
     }
 };
 </script>
+<style scoped>
+.v-card {
+    border-radius: 0px !important;
+}
+</style>

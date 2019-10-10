@@ -172,7 +172,7 @@ const routes = [
 const router = new VueRouter({ routes, mode: 'history' });
 
 router.beforeEach((to, from, next) => {
-    document.title = `EvrEx - ${to.meta.title}`
+    document.title = `BREXILY - ${to.meta.title}` 
     next()
 });
 
@@ -260,7 +260,7 @@ new Vue({
                     params: ['BCHBTC'],
                     id: 1
                 });
-            }, 1002);
+            }, 1005);
         }
     },
     created() {

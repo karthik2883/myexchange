@@ -60,14 +60,20 @@
                                                     >>>>Gotrade</v-btn>
                                                 </td>
                                             </tr>
-                                            <!-- <tr>
+                                            <tr>
                                                 <td class="subtitle-1">LTC/BTC</td>
                                                 <td class="subtitle-1">10136.15</td>
                                                 <td class="subtitle-1">32423243.89</td>
                                                 <td class="subtitle-1">32423243.89</td>
                                                 <td class="subtitle-1">32423243.89</td>
-                                                <td class="red--text subtitle-1">+15%</td>
-                                                <td class="green--text subtitle-1">>>Gotrade</td>
+                                                <td class="red--text subtitle-1">15</td>
+                                                <td class="green--text subtitle-1">
+                                                    <v-btn
+                                                        class="green--text"
+                                                        to="/trade"
+                                                        text
+                                                    >>>>Gotrade</v-btn>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td class="subtitle-1">ETH/BTC</td>
@@ -75,8 +81,14 @@
                                                 <td class="subtitle-1">32423243.89</td>
                                                 <td class="subtitle-1">32423243.89</td>
                                                 <td class="subtitle-1">32423243.89</td>
-                                                <td class="red--text subtitle-1">+15%</td>
-                                                <td class="green--text subtitle-1">>>Gotrade</td>
+                                                <td class="red--text subtitle-1">2</td>
+                                                <td class="green--text subtitle-1">
+                                                    <v-btn
+                                                        class="green--text"
+                                                        to="/trade"
+                                                        text
+                                                    >>>>Gotrade</v-btn>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td class="subtitle-1">ETC/BTC</td>
@@ -84,8 +96,14 @@
                                                 <td class="subtitle-1">32423243.89</td>
                                                 <td class="subtitle-1">32423243.89</td>
                                                 <td class="subtitle-1">32423243.89</td>
-                                                <td class="red--text subtitle-1">+15%</td>
-                                                <td class="green--text subtitle-1">>>Gotrade</td>
+                                                <td class="red--text subtitle-1">2</td>
+                                                <td class="green--text subtitle-1">
+                                                    <v-btn
+                                                        class="green--text"
+                                                        to="/trade"
+                                                        text
+                                                    >>>>Gotrade</v-btn>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td class="subtitle-1">EOS/BTC</td>
@@ -93,9 +111,15 @@
                                                 <td class="subtitle-1">32423243.89</td>
                                                 <td class="subtitle-1">32423243.89</td>
                                                 <td class="subtitle-1">32423243.89</td>
-                                                <td class="red--text subtitle-1">+15%</td>
-                                                <td class="green--text subtitle-1">>>Gotrade</td>
-                                            </tr>-->
+                                                <td class="red--text subtitle-1">3</td>
+                                                <td class="green--text subtitle-1">
+                                                    <v-btn
+                                                        class="green--text"
+                                                        to="/trade"
+                                                        text
+                                                    >>>>Gotrade</v-btn>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </v-simple-table>
                                 </v-card>

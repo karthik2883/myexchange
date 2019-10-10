@@ -33,10 +33,10 @@
                     <ul>
                         <p class="subtitle-1">
                             Contacts:
-                            <br />team@evrex.io The head of the Sales
-                            <br />@Listingevrex
-                            <br />business@evrex.io
-                            <br />listing@evrex.io
+                            <br />team@Brexily.io The head of the Sales
+                            <br />@ListingBrexily
+                            <br />business@Brexily.io
+                            <br />listing@Brexily.io
                             <br />
                         </p>
                     </ul>

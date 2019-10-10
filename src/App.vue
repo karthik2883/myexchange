@@ -75,4 +75,7 @@ export default {
 .fade-leave-active {
     opacity: 0;
 }
+.v-card {
+    border-radius: 0px;
+}
 </style>
