@@ -172,7 +172,7 @@ const routes = [
 const router = new VueRouter({ routes, mode: 'history' });
 
 router.beforeEach((to, from, next) => {
-    document.title = `BREXILY - ${to.meta.title}` 
+    document.title = `BREXILY - ${to.meta.title}`
     next()
 });
 
@@ -254,13 +254,13 @@ new Vue({
                     id: 1
                 });
             }, 1000);
-            this.subscribeBCHBTC = setInterval(() => {
-                Vue.prototype.$socket.sendObj({
-                    method: 'state.subscribe',
-                    params: ['BCHBTC'],
-                    id: 1
-                });
-            }, 1005);
+            // this.subscribeBCHBTC = setInterval(() => {
+            //     Vue.prototype.$socket.sendObj({
+            //         method: 'state.subscribe',
+            //         params: ['BCHBTC'],
+            //         id: 1
+            //     });
+            // }, 1005);
         }
     },
     created() {

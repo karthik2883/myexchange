@@ -1,29 +1,29 @@
 <template>
     <v-bottom-navigation v-model="bottomNav" dark color="grey darken-4">
-        <v-btn value="aboutus">
+        <v-btn class="font-weight-light" value="aboutus">
             <span>About us</span>
         </v-btn>
 
-        <v-btn value="term">
+        <v-btn class="font-weight-light" value="term">
             <span>Term of use</span>
         </v-btn>
 
-        <v-btn value="aml">
+        <v-btn class="font-weight-light" value="aml">
             <span>Aml</span>
         </v-btn>
-        <v-btn value="privacypolicy">
+        <v-btn class="font-weight-light" value="privacypolicy">
             <span>Privacy Policy</span>
         </v-btn>
-        <v-btn value="Fee">
+        <v-btn class="font-weight-light" value="Fee">
             <span>Fee Schedule</span>
         </v-btn>
-        <v-btn value="apply">
+        <v-btn class="font-weight-light" value="apply">
             <span>Apply to list</span>
         </v-btn>
-        <v-btn value="faq">
+        <v-btn class="font-weight-light" value="faq">
             <span>FAQ</span>
         </v-btn>
-        <v-btn value="bounty">
+        <v-btn class="font-weight-light" value="bounty">
             <span>Bounty</span>
         </v-btn>
     </v-bottom-navigation>

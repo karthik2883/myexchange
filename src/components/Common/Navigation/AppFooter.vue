@@ -3,11 +3,11 @@
         <v-card class="flex" flat tile>
             <v-card-actions class="blue-grey darken-4">
                 <v-layout row class="pa-md-4">
-                    <v-flex class="text-left">
+                    <v-flex class="text-left font-weight-light">
                         <v-icon class="white--text">mdi-nuke</v-icon>
                         <span class="white--text">Brexily</span>
                     </v-flex>
-                    <v-flex class="text-right">
+                    <v-flex class="text-right font-weight-light">
                         <v-icon class="white--text" size="24px">mdi-signal-variant</v-icon>
                         <span class="white--text">Connected</span>
                     </v-flex>
