@@ -9,8 +9,10 @@
             </v-container>
         </v-content>
         <LiveTicker v-if="$route.meta.ticker" />
+
         <AppBottomNavigation v-if="$route.meta.bottombar" />
         <AppFooter />
+        <Chat />
     </v-app>
 </template>
 
@@ -33,7 +35,7 @@ import ApplyToList from './components/FrontEnd/ApplyToList';
 import Faq from './components/FrontEnd/Faq';
 import Front from './components/FrontEnd/Front';
 import { constants } from 'crypto';
-
+import Chat from './components/Common/Communication/Chat';
 export default {
     name: 'App',
     components: {
@@ -53,7 +55,8 @@ export default {
         Login,
         Signup,
         History,
-        Order
+        Order,
+        Chat
     },
     data() {
         return {};

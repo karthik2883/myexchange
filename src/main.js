@@ -11,10 +11,14 @@ import Vuex from 'vuex';
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import Schema from './components/Common/Schema/WsSchema'
-
-console.log(Schema.ws_auth_schema);
-//import colors from 'vuetify/lib/util/colors';
 import VueNativeSock from 'vue-native-websocket'
+import Chat from 'vue-beautiful-chat'
+import GeeCaptcha from 'vue-social-captcha'
+Vue.use(GeeCaptcha);
+//console.log(Schema.ws_auth_schema);
+Vue.use(Chat);
+//import colors from 'vuetify/lib/util/colors';
+
 const routes = [
     {
         path: '*',
@@ -250,17 +254,11 @@ new Vue({
             this.subscribeBTCBCH = setInterval(() => {
                 Vue.prototype.$socket.sendObj({
                     method: 'state.subscribe',
-                    params: ['BTCBCH'],
+                    params: ['BTCBCH', 'BCHBTC'],
                     id: 1
                 });
             }, 1000);
-            // this.subscribeBCHBTC = setInterval(() => {
-            //     Vue.prototype.$socket.sendObj({
-            //         method: 'state.subscribe',
-            //         params: ['BCHBTC'],
-            //         id: 1
-            //     });
-            // }, 1005);
+
         }
     },
     created() {

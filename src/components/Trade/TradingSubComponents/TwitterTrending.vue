@@ -8,7 +8,7 @@
                         <span class="title font-weight-light">Brexily</span>
                     </v-card-title>
 
-                    <v-card-text class="headline font-weight-bold">"Comming Soon ."</v-card-text>
+                    <v-card-text class="headline font-weight-light">"Comming Soon ."</v-card-text>
 
                     <v-card-actions>
                         <v-list-item class="grow">
@@ -44,7 +44,7 @@
                     </v-card-title>
 
                     <v-card-text
-                        class="headline font-weight-bold"
+                        class="headline font-weight-light"
                     >"float like a butterfly sting like a bee --Ali."</v-card-text>
 
                     <v-card-actions>
@@ -81,7 +81,7 @@
                     </v-card-title>
 
                     <v-card-text
-                        class="headline font-weight-bold"
+                        class="headline font-weight-light"
                     >"float like a butterfly sting like a bee --Ali."</v-card-text>
 
                     <v-card-actions>
@@ -118,7 +118,7 @@
                     </v-card-title>
 
                     <v-card-text
-                        class="headline font-weight-bold"
+                        class="headline font-weight-light"
                     >"Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well."</v-card-text>
 
                     <v-card-actions>
@@ -152,4 +152,9 @@
 export default {
     name: 'TwitterTrending'
 };
-</script>>
+</script> 
+<style scoped>
+.v-card {
+    border-radius: 0px;
+}
+</style>

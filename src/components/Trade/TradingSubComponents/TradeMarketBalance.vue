@@ -131,13 +131,13 @@
                                                                     class="body-1 text-center font-weight-light text-capitalize"
                                                                 >BCHBTC</td>
                                                                 <td
-                                                                    class="body-1 text-center"
+                                                                    class="body-1 text-center font-weight-light text-capitalize"
                                                                 >{{infoBTCBCH.high}}</td>
                                                                 <td
-                                                                    class="body-1 text-center"
+                                                                    class="body-1 text-center font-weight-light text-capitalize"
                                                                 >{{infoBTCBCH.volume}}</td>
                                                                 <td
-                                                                    class="body-1 text-center"
+                                                                    class="body-1 text-center font-weight-light text-capitalize"
                                                                 >+{{infoBTCBCH.open * infoBTCBCH.high /100}}%</td>
                                                             </tr>
                                                             <!-- <tr>

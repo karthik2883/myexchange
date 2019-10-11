@@ -2,29 +2,15 @@
     <v-layout row class="pa-5">
         <v-container grid-list-md>
             <v-row align="center" justify="center">
-                <v-col cols="12" sm="8" md="4">
+                <v-col cols="12" sm="8" md="6">
                     <v-card class="elevation-12">
-                        <v-toolbar color="blue-grey darken-4">
-                            <v-toolbar-title class="white--text">Signup</v-toolbar-title>
+                        <v-toolbar color="secondary darken-1">
+                            <v-toolbar-title class="white--text">Sign up to access your account</v-toolbar-title>
                             <div class="flex-grow-1"></div>
-                            <v-tooltip bottom>
-                                <template v-slot:activator="{ on }">
-                                    <v-btn :href="source" icon large target="_blank" v-on="on">
-                                        <v-icon class="white--text">mdi-code-tags</v-icon>
-                                    </v-btn>
-                                </template>
-                                <span>Source</span>
-                            </v-tooltip>
-                            <v-tooltip right>
-                                <template v-slot:activator="{ on }">
-                                    <v-icon>mdi-codepen</v-icon>
-                                </template>
-                                <span>Codepen</span>
-                            </v-tooltip>
                         </v-toolbar>
                         <v-card-text>
                             <v-form>
-                                <v-text-field label="Signup" name="signup" type="text"></v-text-field>
+                                <v-text-field label="Username" name="username" type="text"></v-text-field>
 
                                 <v-text-field
                                     id="password"
@@ -40,9 +26,25 @@
                                 ></v-text-field>
                             </v-form>
                         </v-card-text>
+                        <v-card-text>
+                            <v-label>Are you a U.S. citizen/resident?</v-label>
+                        </v-card-text>
+                        <v-card-text>
+                            <v-btn-toggle v-model="toggle_exclusive" mandatory>
+                                <v-row>
+                                    <v-btn x-large outlined color="secondary">No i am not</v-btn>
+                                    <v-btn x-large outlined color="secondary">Yes i am</v-btn>
+                                </v-row>
+                            </v-btn-toggle>
+                        </v-card-text>
+                        <v-card-text>
+                            <v-checkbox
+                                v-model="checkbox"
+                                label="I agree to Partida Services OÜ Terms of Service and Privacy Policy"
+                            ></v-checkbox>
+                        </v-card-text>
                         <v-card-actions>
-                            <div class="flex-grow-1"></div>
-                            <v-btn color="secondary">Signup</v-btn>
+                            <v-btn x-large outlined color="secondary">Signup</v-btn>
                         </v-card-actions>
                     </v-card>
                 </v-col>

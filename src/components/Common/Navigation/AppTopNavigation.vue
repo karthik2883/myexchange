@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar app fixed dark color="secondary darken-1 ">
+    <v-app-bar app fixed dark color="secondary darken-1 " elevate-on-scroll>
         <v-toolbar-items class="hidden-sm-and-down">
             <v-btn class="white--text font-weight-light" to="/home" text>
                 <v-icon>mdi-nuke</v-icon>Brexily
@@ -21,9 +21,7 @@
 
             <!--user login -->
             <!-- <v-btn class="white--text" to="/exchange" text>EXCHANGE</v-btn> -->
-            <v-btn class="white--text font-weight-light" to="/balances" text>BALANCES</v-btn>
-            <v-btn class="white--text font-weight-light" to="/order" text>ORDER</v-btn>
-            <v-btn class="white--text font-weight-light" to="/history" text>HISTORY</v-btn>
+
             <v-btn class="white--text font-weight-light" to="/ieo" text>IEO</v-btn>
             <v-btn class="white--text font-weight-light" to="/Supports" text>SUPPORTS</v-btn>
             <v-btn class="white--text font-weight-light" to="/faq" text>FAQ</v-btn>
@@ -42,6 +40,34 @@
                     <v-icon>mdi-account-multiple-plus</v-icon>
                 </v-btn>
             </v-btn>
+            <v-menu open-on-hover offset-x top="70px">
+                <template v-slot:activator="{ on }">
+                    <v-btn icon v-on="on">
+                        <v-icon>mdi-dots-vertical</v-icon>
+                    </v-btn>
+                </template>
+                <v-list color="secondary darken-1 ">
+                    <v-list-item>
+                        <v-list-item-title class="white--text font-weight-light">
+                            <v-btn
+                                class="white--text font-weight-light"
+                                to="/balances"
+                                text
+                            >BALANCES</v-btn>
+                        </v-list-item-title>
+                    </v-list-item>
+                    <v-list-item>
+                        <v-list-item-title class="white--text font-weight-light">
+                            <v-btn class="white--text font-weight-light" to="/order" text>ORDER</v-btn>
+                        </v-list-item-title>
+                    </v-list-item>
+                    <v-list-item>
+                        <v-list-item-title class="white--text font-weight-light">
+                            <v-btn class="white--text font-weight-light" to="/history" text>HISTORY</v-btn>
+                        </v-list-item-title>
+                    </v-list-item>
+                </v-list>
+            </v-menu>
         </template>
     </v-app-bar>
 </template>
