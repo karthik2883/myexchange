@@ -4,7 +4,7 @@
             <v-flex md12 text-left>
                 <v-layout row>
                     <v-flex md8 text-left>
-                        <p class="headline">Leave a request</p>
+                        <p class="headline font-weight-light">Leave a request</p>
                     </v-flex>
                 </v-layout>
             </v-flex>
@@ -12,7 +12,7 @@
                 <ol>
                     <li>
                         <ul>
-                            <p class="subtitle-1">
+                            <p class="subtitle-1 font-weight-light">
                                 Your project should have a website containing your contact information and a detailed description of the idea. Also official Reddit and Bitcointalk threads for your project are required,
                                 as these are respectable and popular discussions platforms.
                             </p>
@@ -21,7 +21,7 @@
 
                     <li>
                         <ul>
-                            <p class="subtitle-1">
+                            <p class="subtitle-1 font-weight-light">
                                 Your request will be reviewed within a week, and you will receive our reply to the email that you indicated in the form.
                                 Please note, this email should have the same domain as the official project website.
                             </p>
@@ -31,7 +31,7 @@
 
                 <ol>
                     <ul>
-                        <p class="subtitle-1">
+                        <p class="subtitle-1 font-weight-light">
                             Contacts:
                             <br />team@Brexily.io The head of the Sales
                             <br />@ListingBrexily
@@ -80,7 +80,7 @@
                         </v-layout>
                     </v-flex>
                     <v-flex md12>
-                        <v-btn class="mr-4" color="primary">Submit Request</v-btn>
+                        <v-btn class="mr-4" color="secondary lighten-1">Submit Request</v-btn>
                     </v-flex>
                 </form>
             </v-flex>

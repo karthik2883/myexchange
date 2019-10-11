@@ -66,8 +66,16 @@ export default {
             titleImageUrl:
                 'https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png',
             messageList: [
-                { type: 'text', author: `me`, data: { text: `Say yes!` } },
-                { type: 'text', author: `user1`, data: { text: `No.` } }
+                {
+                    type: 'text',
+                    author: `me`,
+                    data: { text: `Hi this Brexily support How May i help you` }
+                },
+                {
+                    type: 'text',
+                    author: `user1`,
+                    data: { text: `Require support on trading.` }
+                }
             ], // the list of the messages to show, can be paginated and adjusted dynamically
             newMessagesCount: 0,
             isChatOpen: false, // to determine whether the chat window should be open or closed

@@ -1,9 +1,9 @@
 <template>
-    <v-container fill-height grid-list-md text-xs-left class="pa-15">
+    <v-container style="z-index:1;" fill-height grid-list-md text-xs-left class="pa-15">
         <v-row no-gutters>
             <p class="headline pa-5 text-start">Authorization</p>
 
-            <v-expansion-panels popout>
+            <v-expansion-panels accordion :focusable="true">
                 <v-expansion-panel>
                     <v-expansion-panel-header>How to register an account?</v-expansion-panel-header>
                     <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
@@ -32,7 +32,7 @@
 
             <p class="headline pa-5">Secure your funds</p>
 
-            <v-expansion-panels popout>
+            <v-expansion-panels accordion :focusable="true">
                 <v-expansion-panel>
                     <v-expansion-panel-header>How to activate two-factor authentication?</v-expansion-panel-header>
                     <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
@@ -57,7 +57,7 @@
 
             <p class="headline pa-5">Deposit / Withdrawal</p>
 
-            <v-expansion-panels popout>
+            <v-expansion-panels accordion :focusable="true">
                 <v-expansion-panel>
                     <v-expansion-panel-header>How to make a currency withdrawal on the exchange?</v-expansion-panel-header>
                     <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
@@ -78,7 +78,7 @@
 
             <p class="headline pa-5">Currency operations</p>
 
-            <v-expansion-panels popout>
+            <v-expansion-panels accordion :focusable="true">
                 <v-expansion-panel>
                     <v-expansion-panel-header>How to recharge the balance?</v-expansion-panel-header>
                     <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
@@ -131,7 +131,7 @@
 
             <p class="headline pa-5">Referral program</p>
 
-            <v-expansion-panels popout>
+            <v-expansion-panels accordion :focusable="true">
                 <v-expansion-panel>
                     <v-expansion-panel-header>In what currency is the commission percentage calculated?</v-expansion-panel-header>
                     <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
@@ -144,7 +144,7 @@
 
             <p class="headline pa-5">General Questions</p>
 
-            <v-expansion-panels popout>
+            <v-expansion-panels accordion :focusable="true">
                 <v-expansion-panel>
                     <v-expansion-panel-header>What are the criteria for cryptocurrency to be listed on the exchange?</v-expansion-panel-header>
                     <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
@@ -174,3 +174,8 @@ export default {
     name: 'Faq'
 };
 </script>>
+<style scoped>
+.v-expansion-panels {
+    z-index: 0 !important;
+}
+</style>

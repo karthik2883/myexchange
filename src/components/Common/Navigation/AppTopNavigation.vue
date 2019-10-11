@@ -20,10 +20,10 @@
             <v-btn class="black--text" to="/marketcap" text>MARKETCAP</v-btn>-->
 
             <!--user login -->
-            <!-- <v-btn class="white--text" to="/exchange" text>EXCHANGE</v-btn> -->
+            <!-- <v-btn class="white--text" to="/exchange" text>EXCHANGE</v-btn> 
 
-            <v-btn class="white--text font-weight-light" to="/ieo" text>IEO</v-btn>
-            <v-btn class="white--text font-weight-light" to="/Supports" text>SUPPORTS</v-btn>
+            <v-btn class="white--text font-weight-light" to="/ieo" text>IEO</v-btn>-->
+
             <v-btn class="white--text font-weight-light" to="/faq" text>FAQ</v-btn>
             <v-btn class="white--text font-weight-light" to="/applytolist" text>APPLYTOLIST</v-btn>
 
@@ -64,6 +64,15 @@
                     <v-list-item>
                         <v-list-item-title class="white--text font-weight-light">
                             <v-btn class="white--text font-weight-light" to="/history" text>HISTORY</v-btn>
+                        </v-list-item-title>
+                    </v-list-item>
+                    <v-list-item>
+                        <v-list-item-title class="white--text font-weight-light">
+                            <v-btn
+                                class="white--text font-weight-light"
+                                to="/Supports"
+                                text
+                            >SUPPORTS</v-btn>
                         </v-list-item-title>
                     </v-list-item>
                 </v-list>
