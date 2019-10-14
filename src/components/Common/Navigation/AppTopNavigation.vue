@@ -8,7 +8,6 @@
                     contain
                     style="height: 50px; width:50px;"
                 ></v-img>
-                <!-- <img :src="require('@/assets/everus.png')" alt="everus" width="50px" height="50px" /> -->
             </v-btn>
         </v-toolbar-items>
 
@@ -79,7 +78,7 @@
                         <v-list-item-title class="white--text font-weight-regular">
                             <v-btn
                                 class="white--text font-weight-regular"
-                                to="/history"
+                                to="/account"
                                 text
                             >Account</v-btn>
                         </v-list-item-title>
@@ -95,11 +94,7 @@
                     </v-list-item>
                     <v-list-item>
                         <v-list-item-title class="white--text font-weight-regular">
-                            <v-btn
-                                class="white--text font-weight-regular"
-                                to="/Supports"
-                                text
-                            >Logout</v-btn>
+                            <v-btn class="white--text font-weight-regular" to="/logout" text>Logout</v-btn>
                         </v-list-item-title>
                     </v-list-item>
                 </v-list>

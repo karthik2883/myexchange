@@ -11,7 +11,12 @@
                 v-if="item !== 'img'"
             >{{item}}</span>
             <span class="logo-letter" v-else>
-                <v-icon x-large>mdi-nuke</v-icon>
+                <img
+                    :src="require('@/assets/m-logo.png')"
+                    alt="everus"
+                    contain
+                    style="height: 15vh; width:15vh; background-color:black;"
+                />
             </span>
         </div>
     </div>
