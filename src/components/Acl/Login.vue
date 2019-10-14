@@ -4,7 +4,7 @@
             <v-row align="center" justify="center">
                 <v-col cols="12" sm="8" md="4">
                     <v-card class="elevation-12">
-                        <v-toolbar color="secondary darken-1">
+                        <v-toolbar color="blue-grey darken-4">
                             <v-toolbar-title class="white--text">Login</v-toolbar-title>
                         </v-toolbar>
                         <v-card-text>

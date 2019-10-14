@@ -2,14 +2,14 @@
     <v-container grid-list-md>
         <v-layout row class="pa-5">
             <v-flex md12 text-left>
-                <v-layout row>
-                    <v-flex md8 text-left>
-                        <p class="headline">Exchange</p>
-                    </v-flex>
-                    <v-flex md4 text-right>
-                        <p md4 class="subtitle-1">1 LTC ≈ 0.38453 ETH</p>
-                    </v-flex>
-                </v-layout>
+                <v-flex md12 text-left>
+                    <v-layout row>
+                        <v-toolbar color="blue-grey darken-4">
+                            <v-toolbar-title class="white--text">Exchange</v-toolbar-title>
+                            <div class="flex-grow-1"></div>
+                        </v-toolbar>
+                    </v-layout>
+                </v-flex>
             </v-flex>
             <v-flex md12 text-left>
                 <p md6 class="subtitle-1">
