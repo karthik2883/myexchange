@@ -25,6 +25,7 @@ import AppTopNavigation from './components/Common/Navigation/AppTopNavigation';
 import Exchange from './components/Backend/Exchange';
 import Balances from './components/Backend/Balances';
 import History from './components/Backend/History';
+import Supports from './components/Backend/Supports';
 import Order from './components/Backend/Order';
 import Overview from './components/Overview';
 import Marketcap from './components/Marketcap';
@@ -55,6 +56,7 @@ export default {
         Login,
         Signup,
         History,
+        Supports,
         Order,
         Chat
     },

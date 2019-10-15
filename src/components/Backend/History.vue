@@ -12,13 +12,17 @@
                 </v-flex>
                 <v-flex md12 text-left>
                     <v-flex md12 text-left>
-                        <v-btn to="/balances" outlined text color="teal accent-4">Deposit</v-btn>
-                        <v-btn
-                            to="/trade?currency=btc&dest=bch"
-                            outlined
-                            text
-                            color="teal accent-4"
-                        >Trade</v-btn>
+                        <v-hover v-slot:default="{ hover }">
+                            <v-btn to="/balances" outlined text color="teal accent-4">Deposit</v-btn>
+                        </v-hover>
+                        <v-hover v-slot:default="{ hover }">
+                            <v-btn
+                                to="/trade?currency=btc&dest=bch"
+                                outlined
+                                text
+                                color="teal accent-4"
+                            >Trade</v-btn>
+                        </v-hover>
                     </v-flex>
 
                     <v-flex md12 text-left>

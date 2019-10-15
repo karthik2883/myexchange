@@ -104,6 +104,18 @@ const routes = [
         }
     },
     {
+        path: '/supports',
+        component: App.components.Supports,
+        meta: {
+            guest: false,
+            requiresAuth: true,
+            title: "Supports",
+            ticker: false,
+            topappbar: true,
+            bottombar: true
+        }
+    },
+    {
         path: '/Order',
         component: App.components.Order,
         meta: {

@@ -10,12 +10,12 @@
                         </v-toolbar>
                     </v-layout>
                 </v-flex>
-                <v-flex md4 text-left>
+                <v-flex md2 text-left>
                     <v-text-field label="Search" single-line hide-details></v-text-field>
                 </v-flex>
 
-                <v-flex md12 text-left>
-                    <v-simple-table>
+                <v-flex md12 sm4 text-left>
+                    <v-simple-table md4 sm4 xs4>
                         <template v-slot:default>
                             <thead>
                                 <tr>
