@@ -56,8 +56,8 @@ export default {
         Login,
         Signup,
         History,
-        Supports,
         Order,
+        Supports,
         Chat
     },
     data() {
